@@ -1,0 +1,16 @@
+{
+	"changeLogs": {
+		"BDFDB": "1.7.4",
+		"CompleteTimestamps": "1.5.7",
+		"CreationDate": "1.4.6",
+		"ShowHiddenChannels": "3.0.0"
+	},
+	"choices": {
+		"toastPosition": "right"
+	},
+	"general": {
+		"showSupportBadges": false,
+		"showToasts": true,
+		"useChromium": false
+	}
+}

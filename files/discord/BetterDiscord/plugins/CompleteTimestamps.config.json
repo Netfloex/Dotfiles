@@ -1,0 +1,41 @@
+{
+	"amounts": {
+		"maxDaysAgo": 0
+	},
+	"choices": {
+		"timestampLang": "nl",
+		"timestampToolLang": "nl"
+	},
+	"dates": {
+		"timestampDate": {
+			"formatString": "$agoDate, $time",
+			"language": "nl"
+		},
+		"tooltipDate": {
+			"formatString": "$agoDate, $time"
+		}
+	},
+	"formats": {
+		"ownFormat": "$hour:$minute:$second, $day.$month.$year",
+		"ownFormatTool": "$hour:$minute:$second, $day.$month.$year"
+	},
+	"general": {
+		"showInChat": true,
+		"showInEmbed": true,
+		"showInAuditLogs": true,
+		"changeForChat": true,
+		"changeForEdit": true
+	},
+	"settings": {
+		"changeForChat": true,
+		"changeForEdit": true,
+		"cutSeconds": false,
+		"displayDate": true,
+		"displayTime": true,
+		"forceZeros": true,
+		"otherOrder": false,
+		"showInAuditLogs": true,
+		"showInChat": true,
+		"showInEmbed": true
+	}
+}
