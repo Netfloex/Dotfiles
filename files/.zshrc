@@ -41,8 +41,6 @@ alias drive="gio open https://drive.google.com/drive/my-drive  &> /dev/null"
 alias appie="gio open https://samtaen.nl/appie  &> /dev/null"
 alias wanneerwerken="gio open https://samtaen.nl/appie  &> /dev/null"
 
-alias bdfdb="sed -i \"s/window.LightCord/false/gi\" ~/.config/Lightcord_BD/plugins/0BDFDB.plugin.js"
-alias fixlightcord="bdfdb"
 alias topdf="libreoffice --headless --convert-to pdf"
 
 context () {
@@ -52,7 +50,7 @@ context () {
 }
 
 cfadd () {
-    cfcli -a -t A add $1 145.53.64.148
+    cfcli -a -t A add $1 $(curl -4 -s ifconfig.co)
 }
 alias cfrm="cfcli rm"
 alias cfls="cfcli ls"
