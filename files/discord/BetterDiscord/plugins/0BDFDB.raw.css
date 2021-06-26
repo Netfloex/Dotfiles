@@ -1,4 +1,3 @@
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SupporterBadge.css);
 
 :root {
 	--bdfdb-blurple: var(--brand-experiment, hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%));
@@ -10,7 +9,6 @@
 img:not([src]), img[src=""], img[src="null"] {
 	opacity: 0;
 }
-
 [REPLACE_CLASS_appmount] > [REPLACE_CLASS_itemlayercontainer],
 [REPLACE_CLASS_appmount] > [REPLACE_CLASS_popouts] {
 	position: fixed;
@@ -579,6 +577,9 @@ img:not([src]), img[src=""], img[src="null"] {
 	height: 20px;
 }
 
+[REPLACE_CLASS_hotkeywrapper] {
+	min-width: 200px;
+}
 [REPLACE_CLASS_hotkeywrapper] [REPLACE_CLASS_hotkeycontainer] {
 	flex: 1 1 auto;
 }
