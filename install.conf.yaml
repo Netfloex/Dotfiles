@@ -1,0 +1,84 @@
+- defaults:
+      link:
+          relink: true
+          force: true
+          create: true
+      shell:
+          stderr: true
+          stdout: true
+
+- clean: ["~", /etc/ssh/sshd_config]
+- link:
+      ~/.zshrc: files/.zshrc
+      ~/.xbindkeysrc: files/.xbindkeysrc
+      /etc/ssh/sshd_config: files/sshd_config
+
+# - create:
+
+- shell:
+      - [git submodule update --init --recursive, Installing submodules]
+      - [sudo systemctl enable sshd --now, Enable ssh]
+
+      - [
+            env | grep -q ZSH && echo "ohmyzsh already installed" || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        ]
+      - [yay -v && echo "yay already installed" || ./scripts/yay, Install yay]
+
+- crontab:
+      - cron: "*/5 * * * *"
+        command: /usr/bin/headsetcontrol -s 20 -l 0 -c >> ~/cron.log
+
+- yay:
+      - zsh zsh-theme-powerlevel10k-git
+
+      ## Applications
+
+      - ferdi-bin
+      - discord
+      - visual-studio-code-bin
+      - google-chrome
+      - teams
+      # - postman-bin
+      - teamviewer
+      - syncthing-gtk
+      - libreoffice-fresh
+      - ark unrar p7zip
+      - vlc
+
+      ## Utils
+
+      # Cli
+      - yarn npm
+      - micro
+      - github-cli
+      - headsetcontrol
+      - bottom-bin htop ctop nvtop
+      - docker-compose-bin
+
+      - gnome-keyring
+      - sshfs
+      - xbindkeys xdotool
+      - mon2cam-git
+      - flameshot
+
+      # KDE
+      - kde-gtk-config
+      - kdeconnect
+      - filelight
+      - gwenview
+      - partitionmanager
+      - kdegraphics-thumbnailers
+      ## Flutter
+
+      # android-studio
+      # flutter
+
+      ## Games
+      - multimc-bin
+
+      # wine
+      # winetricks
+      # legendary
+
+      ## Drivers
+      - nvidia-dkms-performance

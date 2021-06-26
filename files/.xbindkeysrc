@@ -1,0 +1,28 @@
+"xdotool key Home"
+b:9
+"xdotool key Home"
+Shift+b:9
+"xdotool key Home"
+Control+b:9
+
+"xdotool key End"
+b:8
+"xdotool key End"
+Shift+b:8
+"xdotool key End"
+Control+b:8
+
+"xdotool keydown alt    ; sleep 0.02; xdotool key Tab ;sleep 0.02; xdotool keyup alt"
+b:6
+
+"xdotool keydown Super_L; sleep 0.04; xdotool key 2   ;sleep 0.04; xdotool keyup Super_L"
+b:10
+
+"killall lightcord ferdi chrome code konsole;systemctl poweroff"
+Control + Shift + Alt + Down
+
+"flameshot gui"
+Pause
+
+"konsole"
+Control + Alt + t

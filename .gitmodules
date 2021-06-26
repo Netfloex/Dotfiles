@@ -2,3 +2,9 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "dotbot-yay"]
+	path = dotbot-yay
+	url = https://github.com/oxson/dotbot-yay
+[submodule "crontab-dotbot"]
+	path = crontab-dotbot
+	url = https://github.com/fundor333/crontab-dotbot.git
