@@ -19,7 +19,7 @@
 
       # Cli
       - yarn npm
-      - micro
+      - micro bat exa
       - github-cli
       - headsetcontrol
       - bottom-bin htop ctop nvtop
@@ -27,7 +27,6 @@
 
       - gnome-keyring
       - sshfs
-      - ssh
       - xbindkeys xdotool
       - mon2cam-git
       - flameshot
@@ -39,6 +38,7 @@
       - gwenview
       - partitionmanager
       - kdegraphics-thumbnailers
+
       ## Flutter
 
       # android-studio
@@ -53,3 +53,6 @@
 
       ## Drivers
       - nvidia-dkms-performance
+
+      ## Linux
+      - cronie

@@ -22,6 +22,7 @@
       # Config
       ~/.config/chrome-flags.conf: files/chrome-flags.conf
       ~/.config/flameshot/flameshot.ini: files/flameshot.ini
+      ~/.config/bat/config: files/bat.conf
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json

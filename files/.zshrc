@@ -19,11 +19,16 @@ alias s="serv"
 alias noxus="ssh noxus"
 alias cod="code --remote ssh-remote+laptop"
 
-alias aliases="code ~/Backup/.zshrc"
-alias keybinds="code ~/Backup/.xbindkeysrc"
+alias aliases="code ~/.zshrc"
+alias keybinds="code ~/.xbindkeysrc"
 alias backup="code ~/Backup"
 
 alias cls="clear"
+
+alias ls="exa -1 -b --icons --group-directories-first"
+alias lg="ls -G"
+alias la="ls -a"
+alias lf="la -l --octal-permissions --no-permissions --no-user --no-time"
 
 alias dc="docker-compose up -d"
 alias dock="docker"
@@ -70,5 +75,7 @@ bindkey "^z" undo
 bindkey "^y" redo
 bindkey "^H" backward-kill-word
 bindkey "^d" "exit 0"
+
+bindkey '^ ' autosuggest-accept
 
 source ~/.p10k.zsh

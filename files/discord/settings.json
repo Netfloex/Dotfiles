@@ -1,13 +1,7 @@
 {
-  "BACKGROUND_COLOR": "#202225",
-  "IS_MAXIMIZED": true,
-  "IS_MINIMIZED": false,
-  "WINDOW_BOUNDS": {
-    "x": 0,
-    "y": 29,
-    "width": 1920,
-    "height": 1009
-  },
-  "UPDATE_ENDPOINT": "https://updates.goosemod.com/betterdiscord",
-  "NEW_UPDATE_ENDPOINT": "https://updates.goosemod.com/betterdiscord/"
+	"BACKGROUND_COLOR": "#202225",
+	"IS_MAXIMIZED": true,
+	"IS_MINIMIZED": false,
+	"UPDATE_ENDPOINT": "https://updates.goosemod.com/betterdiscord",
+	"NEW_UPDATE_ENDPOINT": "https://updates.goosemod.com/betterdiscord/"
 }
