@@ -12,5 +12,5 @@ git submodule update --init --recursive dotbot
 git submodule update --init --recursive crontab-dotbot
 git submodule update --init --recursive dotbot-yay
 
-"${BASEDIR}/dotbot/bin/dotbot" -d "${BASEDIR}" -p dotbot-yay/yay.py --plugin-dir crontab-dotbot -c "${CONFIG}" "${@}"
+"${BASEDIR}/dotbot/bin/dotbot" -d "${BASEDIR}" --plugin-dir crontab-dotbot -c "${CONFIG}" "${@}"
 

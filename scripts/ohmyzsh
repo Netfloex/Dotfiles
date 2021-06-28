@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -d "$ZSH" ]; then
+echo "ohmyzsh is installed"
+else
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
+export PLUGINS=~/.oh-my-zsh/custom/plugins
+
+git -C $PLUGINS/zsh-autosuggestions pull &> /dev/null || git clone -q https://github.com/zsh-users/zsh-autosuggestions $PLUGINS/zsh-autosuggestions

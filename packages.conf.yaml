@@ -1,0 +1,55 @@
+- yay:
+      - zsh zsh-theme-powerlevel10k-git
+
+      ## Applications
+
+      - ferdi-bin
+      - discord
+      - visual-studio-code-bin
+      - google-chrome
+      - teams
+      # - postman-bin
+      - teamviewer
+      - syncthing-gtk
+      - libreoffice-fresh
+      - ark unrar p7zip
+      - vlc
+
+      ## Utils
+
+      # Cli
+      - yarn npm
+      - micro
+      - github-cli
+      - headsetcontrol
+      - bottom-bin htop ctop nvtop
+      - docker-compose-bin
+
+      - gnome-keyring
+      - sshfs
+      - ssh
+      - xbindkeys xdotool
+      - mon2cam-git
+      - flameshot
+
+      # KDE
+      - kde-gtk-config
+      - kdeconnect
+      - filelight
+      - gwenview
+      - partitionmanager
+      - kdegraphics-thumbnailers
+      ## Flutter
+
+      # android-studio
+      # flutter
+
+      ## Games
+      - multimc-bin
+
+      # wine
+      # winetricks
+      # legendary
+
+      ## Drivers
+      - nvidia-dkms-performance

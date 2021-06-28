@@ -1,7 +1,8 @@
 #!/bin/bash
 
 export YAY=~/.cache/yay-git
-git -C $YAY pull || git clone https://aur.archlinux.org/yay-bin.git ~/.cache/yay-git
+git -C $YAY pull &> /dev/null || git clone -q https://aur.archlinux.org/yay-bin.git $YAY
+
 cd $YAY
 makepkg -sci --noconfirm
 yay --nocleanmenu --nodiffmenu --noeditmenu --noupgrademenu --noremovemake --nocleanafter  --answerclean None --answerdiff None --answeredit None --batchinstall --save
