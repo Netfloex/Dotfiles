@@ -16,7 +16,6 @@
 
 - link:
       ~/.zshrc: files/.zshrc
-      ~/.p10k.zsh: files/.p10k.zsh
       ~/.xbindkeysrc: files/.xbindkeysrc
 
       ~/.config/chrome-flags.conf: files/chrome-flags.conf

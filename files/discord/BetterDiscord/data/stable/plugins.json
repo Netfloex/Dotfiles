@@ -9,5 +9,9 @@
     "DashToSpaceInChannelName": true,
     "HideDisabledEmojis": true,
     "PermissionsViewer": true,
-    "ShowHiddenChannels": true
+    "ShowHiddenChannels": true,
+    "BetterCodeblocks": true,
+    "ColorSighted": true,
+    "MemberCount": true,
+    "ShutUpClyde": true
 }
