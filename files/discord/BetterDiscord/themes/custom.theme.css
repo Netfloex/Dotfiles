@@ -1,0 +1,10 @@
+/**
+ * @name Custom
+ * @version 1
+ * @description Custom Discord
+ */
+
+/* Removes "Boost this server" */
+.channelNotice-1-XFjC.premiumGuildSubscription-3oKecP {
+	display: none;
+}
