@@ -7,7 +7,8 @@
       - discord
       - visual-studio-code-bin
       - google-chrome
-      - teams
+      - bitwarden-bin
+      # - teams
       # - postman-bin
       - teamviewer
       - syncthing-gtk
@@ -55,4 +56,14 @@
       - nvidia-dkms-performance
 
       ## Linux
+      - polybar
+      - bspwm
+      - sxhkd
+      - sddm
+      - feh
+
+      ## Fonts
+      - ttf-borg-sans-mono
+      - ttf-font-awesome
+
       - cronie

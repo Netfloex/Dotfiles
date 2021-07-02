@@ -24,12 +24,18 @@
       ~/.config/flameshot/flameshot.ini: files/flameshot.ini
       ~/.config/bat/config: files/bat.conf
 
+      ~/.config/kitty/kitty.conf: files/kitty.conf
+      ~/.config/sxhkd/sxhkdrc: files/sxhkdrc
+      ~/.config/bspwm/bspwmrc: files/bspwmrc
+      ~/.config/polybar/config: files/polybar.conf
+
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
       ~/.config/BetterDiscord: files/discord/BetterDiscord
 
       # Other
       /etc/ssh/sshd_config: files/sshd_config
+      /etc/sddm.conf.d/sddm.conf: files/sddm.conf
 
 # - create:
 
