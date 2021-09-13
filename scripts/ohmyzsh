@@ -5,6 +5,14 @@ if [ -d "$ZSH" ]; then
 else
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
+
 export PLUGINS=~/.oh-my-zsh/custom/plugins
 
 git -C $PLUGINS/zsh-autosuggestions pull &> /dev/null || git clone -q https://github.com/zsh-users/zsh-autosuggestions $PLUGINS/zsh-autosuggestions
+git -C $PLUGINS/zsh-syntax-highlighting pull &> /dev/null || git clone -q https://github.com/zsh-users/zsh-syntax-highlighting.git $PLUGINS/zsh-syntax-highlighting
+git -C $PLUGINS/zsh-histdb pull &> /dev/null || git clone -q https://github.com/larkery/zsh-histdb.git $PLUGINS/zsh-histdb
+
+export THEMES=~/.oh-my-zsh/custom/themes
+
+git -C $THEMES/powerlevel10k &> /dev/null || git clone -q https://github.com/romkatv/powerlevel10k.git $THEMES/powerlevel10k
+
