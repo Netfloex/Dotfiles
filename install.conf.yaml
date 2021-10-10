@@ -23,6 +23,7 @@
       ~/.config/chrome-flags.conf: files/chrome-flags.conf
       ~/.config/flameshot/flameshot.ini: files/flameshot.ini
       ~/.config/bat/config: files/bat.conf
+      ~/.config/micro/bindings.json: files/micro-bindings.json
 
       ~/.config/kitty/kitty.conf: files/kitty.conf
       ~/.config/sxhkd/sxhkdrc: files/sxhkdrc

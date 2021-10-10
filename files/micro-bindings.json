@@ -1,0 +1,11 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlBackspace": "DeleteWordLeft",
+    "CtrlD": "QuitAll",
+    "CtrlDelete": "DeleteWordRight",
+    "CtrlDown": "MoveLinesDown",
+    "CtrlH": "DeleteWordLeft",
+    "CtrlJ": "DeleteWordRight",
+    "CtrlUnderscore": "lua:comment.comment",
+    "CtrlUp": "MoveLinesUp"
+}
