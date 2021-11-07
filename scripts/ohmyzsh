@@ -17,7 +17,6 @@ git -C $PLUGINS/zsh-histdb pull &> /dev/null || git clone -q https://github.com/
 
 export THEMES=~/.oh-my-zsh/custom/themes
 
-echo Installing zsh-autosuggestions
 echo Installing powerlevel10k
 git -C $THEMES/powerlevel10k pull &> /dev/null || git clone -q https://github.com/romkatv/powerlevel10k.git $THEMES/powerlevel10k
 
