@@ -13,14 +13,17 @@
       - ~/.config/discord
       - ~/.config/flameshot
       - /etc/ssh/sshd_config
+      - /etc/sddm.conf.d
+      - /etc
 
 - link:
       # Home
       ~/.zshrc: files/.zshrc
+      ~/.aliases.zsh: files/.aliases.zsh
       ~/.xbindkeysrc: files/.xbindkeysrc
 
       # Config
-      ~/.config/chrome-flags.conf: files/chrome-flags.conf
+      ~/.config/chromium-flags.conf: files/chromium-flags.conf
       ~/.config/flameshot/flameshot.ini: files/flameshot.ini
       ~/.config/bat/config: files/bat.conf
       ~/.config/micro/bindings.json: files/micro-bindings.json
@@ -37,6 +40,7 @@
       # Other
       /etc/ssh/sshd_config: files/sshd_config
       /etc/sddm.conf.d/sddm.conf: files/sddm.conf
+      /etc/pacman.conf: files/pacman.conf
 
 # - create:
 
