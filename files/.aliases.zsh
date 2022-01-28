@@ -1,8 +1,7 @@
 alias s="ssh laptop"
-alias noxus="ssh noxus"
 alias cod="code --remote ssh-remote+laptop"
 
-alias aliases="$EDITOR ~/.zshrc"
+alias aliases="$EDITOR ~/.aliases.zsh"
 
 alias cls="clear"
 
@@ -38,7 +37,6 @@ alias cfls="cfcli ls"
 
 alias un="sudo pacman -Rs"
 alias inst="yay --noconfirm"
-alias d="yay -S --noconfirm"
 
 
 alias flutter="~/flutter/bin/flutter"

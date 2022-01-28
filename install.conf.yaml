@@ -45,7 +45,6 @@
 # - create:
 
 - shell:
-      - [git submodule update --init --recursive, Installing submodules]
       - [./scripts/ohmyzsh, Install ohmyzsh]
       - [./scripts/yay, Install yay]
 

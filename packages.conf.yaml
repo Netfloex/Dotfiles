@@ -21,8 +21,8 @@
       - micro bat exa
       - github-cli
       - headsetcontrol
-      - bottom-bin htop ctop nvtop
-      - docker-compose-bin
+      - bottom htop ctop nvtop
+      - docker-compose
 
       - gnome-keyring
       - sshfs
@@ -50,7 +50,7 @@
       # legendary
 
       ## Drivers
-      - nvidia-dkms-performance
+      # - nvidia-dkms-performance
 
       ## Linux
       - polybar

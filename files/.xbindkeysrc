@@ -18,7 +18,7 @@ b:6
 "xdotool keydown Super_L; sleep 0.04; xdotool key 1   ;sleep 0.04; xdotool keyup Super_L"
 b:10
 
-"killall discord ferdi chrome code konsole;systemctl poweroff"
+"killall discord ferdi chromium code konsole;systemctl poweroff"
 Control + Shift + Alt + Down
 
 "flameshot gui"
