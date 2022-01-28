@@ -25,7 +25,7 @@
     },
     "developer": {
         "debuggerHotkey": false,
-        "reactDevTools": false,
+        "reactDevTools": true,
         "inspectElement": true,
         "devToolsWarning": true,
         "debugLogs": false

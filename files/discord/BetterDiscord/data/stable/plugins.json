@@ -1,7 +1,7 @@
 {
     "BDFDB": true,
     "ZeresPluginLibrary": true,
-    "BetterFolders": true,
+    "BetterFolders": false,
     "BiggerStreamPreview": true,
     "CallTimeCounter": true,
     "CompleteTimestamps": true,
@@ -14,5 +14,6 @@
     "ColorSighted": true,
     "MemberCount": true,
     "ShutUpClyde": true,
-    "DoNotTrack": true
+    "DoNotTrack": true,
+    "AutoUpdate": true
 }
