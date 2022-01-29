@@ -3,7 +3,12 @@
 if [ -d "$ZSH" ]; then
     echo "ohmyzsh is installed"
 else
-	pacman -Sy --noconfirm zsh
+    
+    if ! command -v s > /dev/null
+    then
+        echo Install zsh first!
+        exit
+    fi
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 

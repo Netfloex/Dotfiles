@@ -12,9 +12,6 @@
       - ~/.config
       - ~/.config/discord
       - ~/.config/flameshot
-      - /etc/ssh/sshd_config
-      - /etc/sddm.conf.d
-      - /etc
 
 - link:
       # Home
@@ -29,20 +26,10 @@
       ~/.config/micro/bindings.json: files/micro-bindings.json
 
       ~/.config/kitty/kitty.conf: files/kitty.conf
-      ~/.config/sxhkd/sxhkdrc: files/sxhkdrc
-      ~/.config/bspwm/bspwmrc: files/bspwmrc
-      ~/.config/polybar/config: files/polybar.conf
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
       ~/.config/BetterDiscord: files/discord/BetterDiscord
-
-      # Other
-      /etc/ssh/sshd_config: files/sshd_config
-      /etc/sddm.conf.d/sddm.conf: files/sddm.conf
-      /etc/pacman.conf: files/pacman.conf
-
-# - create:
 
 - shell:
       - [./scripts/ohmyzsh, Install ohmyzsh]
@@ -51,16 +38,3 @@
 - crontab:
       - cron: "*/5 * * * *"
         command: /usr/bin/headsetcontrol -s 20 -l 0 -c >> ~/cron.log
-
-#  Install Packages
-- shell:
-      - [./install -p dotbot-yay/yay.py -c packages.conf.yaml]
-
-#  After packages
-- shell:
-      - [sudo systemctl enable sshd --now, Enable ssh]
-      - [sudo systemctl enable teamviewerd --now, Enable teamviewerd]
-      - [sudo systemctl enable docker --now, Enable docker]
-      - [sudo systemctl enable cronie --now, Enable cronie]
-
-      - [sudo usermod -aG docker $USER, Add user to docker group]

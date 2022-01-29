@@ -1,0 +1,24 @@
+- defaults:
+      link:
+          relink: true
+          force: true
+          create: true
+      shell:
+          stderr: true
+          stdout: true
+
+- clean:
+      - /etc/ssh
+      - /etc
+
+- link:
+      /etc/ssh/sshd_config: files/sshd_config
+      /etc/pacman.conf: files/pacman.conf
+
+- shell:
+      - [systemctl enable sshd --now, Enable ssh]
+      - [systemctl enable teamviewerd --now, Enable teamviewerd]
+      - [systemctl enable docker --now, Enable docker]
+      - [systemctl enable cronie --now, Enable cronie]
+
+      - [usermod -aG docker $USER, Add user to docker group]

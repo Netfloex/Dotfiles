@@ -1,0 +1,5 @@
+#!/bin/bash
+LISTFILE=$(dirname $(dirname $(realpath $0)))/package-list.sh
+PACKAGES=$(sed '/^$\|^#/d' $LISTFILE)
+
+yay -S --needed --noconfirm $PACKAGES

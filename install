@@ -10,7 +10,10 @@ cd "${BASEDIR}"
 git -C dotbot submodule sync --quiet --recursive
 git submodule update --init --recursive dotbot
 git submodule update --init --recursive crontab-dotbot
-git submodule update --init --recursive dotbot-yay
+
+if (( $EUID == 0 )); then
+    CONFIG="root.conf.yaml"
+fi
 
 "${BASEDIR}/dotbot/bin/dotbot" -d "${BASEDIR}" --plugin-dir crontab-dotbot -c "${CONFIG}" "${@}"
 
