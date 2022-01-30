@@ -3,7 +3,7 @@
 ferdi-bin
 discord
 visual-studio-code-bin
-# bitwarden
+joplin-desktop-bin
 teamviewer
 libreoffice-fresh
 ark unrar p7zip
@@ -18,6 +18,7 @@ github-cli
 headsetcontrol
 bottom htop ctop nvtop
 docker-compose docker
+doggo-bin
 
 gnome-keyring
 sshfs
@@ -25,7 +26,6 @@ xbindkeys xdotool
 flameshot
 net-tools inetutils
 
-kdeconnect
 
 ## Flutter
 
@@ -52,3 +52,4 @@ cronie
 # Gnome
 gnome-shell
 equilux-theme
+devilspie2

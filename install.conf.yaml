@@ -24,8 +24,8 @@
       ~/.config/flameshot/flameshot.ini: files/flameshot.ini
       ~/.config/bat/config: files/bat.conf
       ~/.config/micro/bindings.json: files/micro-bindings.json
-
       ~/.config/kitty/kitty.conf: files/kitty.conf
+      ~/.config/devilspie2: files/devilspie2
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
