@@ -40,3 +40,6 @@ alias inst="yay --noconfirm"
 
 
 alias flutter="~/flutter/bin/flutter"
+
+
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"

@@ -14,6 +14,8 @@
 - link:
       /etc/ssh/sshd_config: files/sshd_config
       /etc/pacman.conf: files/pacman.conf
+      /etc/default/grub: files/grub
+      /etc/gdm/custom.conf: files/gdm.conf
 
 - shell:
       - [systemctl enable sshd --now, Enable ssh]
