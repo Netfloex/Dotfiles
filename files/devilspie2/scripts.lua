@@ -12,9 +12,9 @@ local function has_value (tab, val)
 end
 
 
-local maximizedApplications = {"Ferdi", "discord", "Code", "kitty", "Chromium"}
+local maximizedApplications = {"Ferdi", "discord", "Code", "kitty", "Chromium", "Joplin"}
 local leftMonitorApplications = {"Ferdi", "discord"}
-local rightMonitorApplications = {"Code", "kitty", "Chromium"}
+local rightMonitorApplications = {"Code", "kitty", "Chromium", "Joplin"}
 
 
 if (has_value(maximizedApplications, get_window_class())) then
