@@ -1,4 +1,4 @@
-source ~/.cache/p10k-instant-prompt-$USER.zsh
+source ~/.cache/p10k-instant-prompt-$USER.zsh 2> /dev/null
 
 export ZSH=~/.oh-my-zsh
 plugins=(git dirhistory npm archlinux yarn sudo docker docker-compose alias-finder vscode zsh-autosuggestions zsh-syntax-highlighting zsh-histdb)
@@ -45,4 +45,4 @@ autoload -Uz add-zsh-hook
 source $ZSH/custom/plugins/zsh-histdb/histdb-interactive.zsh
 bindkey '^r' _histdb-isearch
 
-source ~/.p10k.zsh
+source ~/.p10k.zsh 2> /dev/null

@@ -1,10 +1,9 @@
 #!/bin/bash
-
 if [ -d "$ZSH" ]; then
     echo "ohmyzsh is installed"
 else
     
-    if ! command -v s > /dev/null
+    if ! command -v zsh > /dev/null
     then
         echo Install zsh first!
         exit

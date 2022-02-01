@@ -13,6 +13,10 @@
       - ~/.config/discord
       - ~/.config/flameshot
 
+- shell:
+      - [./scripts/ohmyzsh, Install ohmyzsh]
+      - [./scripts/yay, Install yay]
+
 - link:
       # Home
       ~/.zshrc: files/.zshrc
@@ -26,14 +30,11 @@
       ~/.config/micro/bindings.json: files/micro-bindings.json
       ~/.config/kitty/kitty.conf: files/kitty.conf
       ~/.config/devilspie2: files/devilspie2
+      ~/.config/argos: files/argos
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
       ~/.config/BetterDiscord: files/discord/BetterDiscord
-
-- shell:
-      - [./scripts/ohmyzsh, Install ohmyzsh]
-      - [./scripts/yay, Install yay]
 
 - crontab:
       - cron: "*/5 * * * *"

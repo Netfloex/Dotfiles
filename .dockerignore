@@ -1,0 +1,10 @@
+**
+
+!/install.conf.yaml
+!/package-list.sh
+!/install
+!/scripts
+!/dotbot
+!/files
+!/.git
+!/crontab-dotbot
