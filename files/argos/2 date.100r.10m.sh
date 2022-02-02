@@ -7,6 +7,5 @@ DUTCH_MONTHS=(Januari Februari Maart April Mei Juni Juli Augustus September Octo
 WEEKDAY=${DUTCH_WEEKDAYS[$(date +"%u") -1 ]}
 DATE=$(date +"%-d")
 MONTH=${DUTCH_MONTHS[$(date +"%-m") -1 ]}
-TIME=$(date +"%R")
 
-echo "$WEEKDAY $DATE $MONTH \t\t $TIME"
+echo "$WEEKDAY $DATE $MONTH"

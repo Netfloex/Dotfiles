@@ -5,6 +5,12 @@ alias aliases="$EDITOR ~/.aliases.zsh"
 
 alias cls="clear"
 
+
+take () {
+    mkdir -p -- "$1" &&
+    cd -P -- "$1"
+}
+
 alias ls="exa -1 -b --icons --group-directories-first"
 alias lg="ls -G"
 alias la="ls -a"
@@ -38,8 +44,6 @@ alias cfls="cfcli ls"
 alias un="sudo pacman -Rs"
 alias inst="yay --noconfirm"
 
-
-alias flutter="~/flutter/bin/flutter"
 
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
