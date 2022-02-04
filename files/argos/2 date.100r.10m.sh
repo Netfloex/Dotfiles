@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DUTCH_WEEKDAYS=(Maandag Dinsdag Woensdag Donderdag Vrjdag Zaterdag Zondag)
+DUTCH_WEEKDAYS=(Maandag Dinsdag Woensdag Donderdag Vrijdag Zaterdag Zondag)
 DUTCH_MONTHS=(Januari Februari Maart April Mei Juni Juli Augustus September October November December)
 
 

@@ -6,13 +6,6 @@
         "showToasts": false,
         "mediaKeys": false
     },
-    "appearance": {
-        "twentyFourHour": true,
-        "hideGiftButton": true,
-        "hideGIFButton": false,
-        "minimalMode": false,
-        "coloredText": false
-    },
     "addons": {
         "addonErrors": true,
         "autoReload": true,
@@ -24,11 +17,12 @@
         "openAction": "settings"
     },
     "developer": {
+        "debugLogs": false,
+        "devTools": false,
         "debuggerHotkey": false,
         "reactDevTools": true,
         "inspectElement": true,
-        "devToolsWarning": true,
-        "debugLogs": false
+        "devToolsWarning": true
     },
     "window": {
         "transparency": false,
