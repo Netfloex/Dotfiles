@@ -32,7 +32,7 @@ headsetcontrol
 github-cli
 docker-compose docker
 flutter flutter-group-pacman-hook
-
+pacman-contrib
 net-tools inetutils
 
 #D --- Docker Seperation ---
