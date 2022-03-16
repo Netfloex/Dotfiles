@@ -18,13 +18,15 @@ BATTERY=$(
     2>&1
 )
 
-if [ $? -eq 1 ]
+STATUS=$?
+PERCENTAGE=$(echo "$BATTERY" | sed "s|[^0-9]*||g")
+
+
+if [ $STATUS -eq 1 ] || [ $PERCENTAGE -eq 1 ]
 then
     echo " | iconName=battery-missing-symbolic"
     exit
 fi
-
-PERCENTAGE=$(echo "$BATTERY" | sed "s|[^0-9]*||g")
 
 [[ "$BATTERY" == *"false"* ]]
 CHARGING=$?
