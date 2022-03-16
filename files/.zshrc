@@ -45,4 +45,10 @@ autoload -Uz add-zsh-hook
 source $ZSH/custom/plugins/zsh-histdb/histdb-interactive.zsh
 bindkey '^r' _histdb-isearch
 
+autoload -Uz compinit
+compinit
+
+eval "$(zoxide init zsh)"
+alias cd="z"
+
 source ~/.p10k.zsh 2> /dev/null

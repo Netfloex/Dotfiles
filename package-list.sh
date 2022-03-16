@@ -43,5 +43,6 @@ yarn
 micro bat exa
 bottom htop
 doggo-bin
+zoxide
 
 cronie
