@@ -1,9 +1,9 @@
 {
 	"changeLogs": {
-		"BDFDB": "2.0.6",
-		"CompleteTimestamps": "1.6.0",
+		"BDFDB": "2.1.9",
+		"CompleteTimestamps": "1.6.1",
 		"CreationDate": "1.4.6",
-		"ShowHiddenChannels": "3.0.4"
+		"ShowHiddenChannels": "3.0.6"
 	},
 	"choices": {
 		"toastPosition": "right"
@@ -14,7 +14,7 @@
 		"useChromium": false
 	},
 	"hashes": {
-		"0BDFDB.data.json": "de9f77c58e15a124ec2a688437be524b96649784",
-		"0BDFDB.raw.css": "a1036e10077b9457f3903795204f7dbd91d7646d"
+		"0BDFDB.data.json": "8f08825d634cb1ebc423392cd4cb4f58805127e6",
+		"0BDFDB.raw.css": "5b4dfd0092eb658a85c3896c5fdab49cf83d0cee"
 	}
 }
