@@ -43,7 +43,7 @@ _BORING_COMMANDS=("^ls$" "^cd$" "^ ")
 autoload -Uz add-zsh-hook
 
 source $ZSH/custom/plugins/zsh-histdb/histdb-interactive.zsh
-bindkey '^r' _histdb-isearch
+bindkey '^s' _histdb-isearch
 
 autoload -Uz compinit
 compinit

@@ -38,4 +38,4 @@
 
 - crontab:
       - cron: "*/5 * * * *"
-        command: /usr/bin/headsetcontrol -s 20 -l 0 -c >> ~/cron.log
+        command: /usr/bin/headsetcontrol -s 20 -l 0 -c

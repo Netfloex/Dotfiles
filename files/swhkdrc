@@ -1,0 +1,47 @@
+#### Applications
+
+# New Tab
+super + @t
+    sudo -u $USER chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
+	xdotool keydown ctrl
+		xdotool key l
+	xdotool keyup ctrl
+
+# Kitty
+control + alt + @t
+	kitty
+
+# Nautilus
+super + @e
+	nautilus
+
+
+####  Misc
+
+# Reload
+super + @Escape
+	sudo pkill -HUP swhkd
+
+# Close focused application
+
+super + @d
+	xdotool getwindowfocus windowclose
+
+
+# Hide focused application
+
+super + @h
+	xdotool getwindowfocus windowminimize
+
+
+# Maximize focused application
+
+super + @up
+	xdotool getwindowfocus windowsize 100% 100%
+
+# Shutdown and Reboot
+
+control + shift + alt + @down
+control + shift + alt + @prior
+	killall discord ferdi chromium code konsole
+	systemctl poweroff
