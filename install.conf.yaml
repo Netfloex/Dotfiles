@@ -12,6 +12,8 @@
       - ~/.config
       - ~/.config/discord
       - ~/.config/flameshot
+      - ~/.config/kitty
+      - ~/.config/rofi
 
 - shell:
       - [./scripts/ohmyzsh, Install ohmyzsh]
@@ -31,6 +33,7 @@
       ~/.config/kitty/kitty.conf: files/kitty.conf
       ~/.config/devilspie2: files/devilspie2
       ~/.config/argos: files/argos
+      ~/.config/rofi/config.rasi: files/rofi.rasi
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json

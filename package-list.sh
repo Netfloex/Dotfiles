@@ -15,7 +15,9 @@ gnome-shell-extension-argos-git
 materia-gtk-theme xcursor-breeze
 devilspie2
 gnome-keyring
-xbindkeys xdotool
+
+swhkd-bin xbindkeys xdotool
+rofi
 
 ## Fonts
 ttf-fira-code

@@ -16,6 +16,9 @@ super + @e
 	nautilus
 
 
+super + @Space
+	rofi -show combi
+
 ####  Misc
 
 # Reload
