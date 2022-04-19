@@ -1,13 +1,41 @@
 @theme "arthur"
 
 configuration {
-  modi: [ combi ];
-  combi-modi: [ window, drun ];
-  show-icons: true;
-  window-format: "{t}";
-  combi-display-format: " {text}";
+	modi: [ combi ];
+	combi-modi: [ window, drun, ssh ];
+	show-icons: true;
+	window-format: "{t}";
+	combi-display-format: " {text}";
 }
 
 * {
-  font: "Fira Code 12";
+	font: "Fira Code 12";
+	bgcolor: rgba (0, 0, 0, 75%);
+	selectedbgcolor: rgba(33, 150, 243, 0.5);
+}
+
+inputbar {
+	background-color: var(bgcolor);
+	text-color: white;
+}
+listview {
+	background-color: var(bgcolor);
+}
+element {
+	padding: 10px;
+}
+
+element-icon {
+	size: 20;
+}
+
+element selected.normal {
+	background-color: var(selectedbgcolor);
+}
+
+element selected.active {
+	background-color: var(selectedbgcolor);
+}
+element-text {
+	background-color: transparent;
 }
