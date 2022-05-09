@@ -12,8 +12,8 @@ local function has_value (tab, val)
 end
 
 
-local maximizedApplications = {"Ferdi", "discord", "Code", "kitty", "Chromium", "Joplin"}
-local leftMonitorApplications = {"Ferdi", "discord"}
+local maximizedApplications = {"SchildiChat", "Ferdi", "discord", "Code", "kitty", "Chromium", "Joplin"}
+local leftMonitorApplications = {"SchildiChat", "Ferdi", "discord"}
 local rightMonitorApplications = {"Code", "kitty", "Chromium", "Joplin"}
 
 

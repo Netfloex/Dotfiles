@@ -1,6 +1,6 @@
 ## Applications
-
-ferdi-bin
+# ferdi-bin
+schildichat-desktop-bin
 discord
 visual-studio-code-bin
 joplin-desktop-bin
