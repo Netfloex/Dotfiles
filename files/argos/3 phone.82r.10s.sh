@@ -1,4 +1,4 @@
-
+#!/bin/bash
 DEVICE_ID=$(~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io/service/daemon.js -l)
 
 BATTERY=$(

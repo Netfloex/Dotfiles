@@ -1,3 +1,5 @@
+#!/bin/bash
+
 UPDATE_COUNT=$(checkupdates | wc -l)
 TEXT="Update"
 UPDATE="yay -Syu --noconfirm && sleep 5 || read"

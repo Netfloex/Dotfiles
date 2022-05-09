@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 BATTERY="$(cat /sys/class/power_supply/hidpp_battery_0/capacity 2> /dev/null)"
 
