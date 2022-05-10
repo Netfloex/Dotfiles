@@ -1,0 +1,10 @@
+#!/bin/bash
+FOCUS=$(xdotool getwindowfocus getwindowclassname)
+if [ "$FOCUS" == "SchildiChat" ]; then
+    xdotool getwindowfocus windowminimize
+else
+    PIDS=$(xdotool search --onlyvisible --classname SchildiChat)
+    for PID in $PIDS; do
+        xdotool windowactivate $PID
+    done
+fi
