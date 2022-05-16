@@ -9,7 +9,8 @@
 
 - clean:
       - /etc/ssh
-      - /etc/swhkd
+      - /etc/gdm
+      - /etc/default
       - /etc
 
 - link:
@@ -17,7 +18,6 @@
       /etc/pacman.conf: files/pacman.conf
       /etc/default/grub: files/grub
       /etc/gdm/custom.conf: files/gdm.conf
-      /etc/swhkd/swhkdrc: files/swhkdrc
       /etc/locale.conf: files/locale.conf
 
 - shell:

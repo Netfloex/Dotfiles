@@ -1,5 +1,0 @@
-#!/bin/bash
-
-killall swhks
-
-swhks & sudo swhkd

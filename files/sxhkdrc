@@ -20,7 +20,7 @@ super + @space
 
 # Reload
 super + @Escape
-	sudo pkill -HUP swhkd
+	pkill -USR1 -x sxhkd
 
 # Close focused application
 

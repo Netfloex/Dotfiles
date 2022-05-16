@@ -36,7 +36,7 @@
       ~/.config/devilspie2: files/devilspie2
       ~/.config/argos: files/argos
       ~/.config/rofi/config.rasi: files/rofi.rasi
-      ~/.config/sxhkd/sxhkdrc: files/swhkdrc
+      ~/.config/sxhkd/sxhkdrc: files/sxhkdrc
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
