@@ -16,7 +16,7 @@ materia-gtk-theme xcursor-breeze
 devilspie2
 gnome-keyring
 
-swhkd-bin xbindkeys xdotool
+sxhkd xdotool
 rofi
 
 ## Fonts

@@ -2,10 +2,7 @@
 
 # New Tab
 super + @t
-    sudo -u $USER chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
-	xdotool keydown ctrl
-		xdotool key l
-	xdotool keyup ctrl
+    chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
 
 # Kitty
 control + alt + @t
@@ -16,7 +13,7 @@ super + @e
 	nautilus
 
 
-super + @Space
+super + @space
 	rofi -show combi
 
 ####  Misc
@@ -27,24 +24,21 @@ super + @Escape
 
 # Close focused application
 
-super + @d
-	xdotool getwindowfocus windowclose
-
-
-# Hide focused application
-
-super + @h
-	xdotool getwindowfocus windowminimize
-
-
-# Maximize focused application
-
-super + @up
-	xdotool getwindowfocus windowsize 100% 100%
+super + {@d, @h, @Up}
+	xdotool getwindowfocus {windowquit, windowminimize, windowsize 100% 100%}
 
 # Shutdown and Reboot
 
-control + shift + alt + @down
-control + shift + alt + @prior
-	killall discord ferdi chromium code konsole
-	systemctl poweroff
+# control + shift + alt + @down
+control + shift + alt + {Prior, Down}
+	killall discord ferdi chromium code konsole; \
+	systemctl {reboot,poweroff}
+
+button2
+	xdotool key alt+Tab
+
+button10
+	~/Dotfiles/files/toggle_chat
+	
+{_,shift,control} + {button9,button8}
+	xdotool key { , , } {Home,End}
