@@ -13,4 +13,4 @@ fi
 
 echo "---"
 echo "$TEXT | bash='kitty sh -c \"${UPDATE}\"' terminal=false iconName=emblem-synchronizing-symbolic"
-echo "$TEXT Server | bash='kitty sh -c \"ssh laptop ${UPDATE}\"' terminal=false iconName=emblem-synchronizing-symbolic"
+echo "$TEXT All | bash='kitty --session ~/Dotfiles/files/update_servers.session' terminal=false iconName=emblem-synchronizing-symbolic"

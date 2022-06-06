@@ -8,6 +8,9 @@ super + @t
 control + alt + @t
 	kitty
 
+super + @g
+	kitty --session ~/Dotfiles/files/servers.session
+
 # Nautilus
 super + @e
 	nautilus
