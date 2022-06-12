@@ -1,5 +1,5 @@
 enabled_layouts grid
 launch --title Saturn ssh saturn '~/Server/files/update.sh'
-launch --title Jupiter ssh jupiter '~/Server/files/update.sh'
 launch --title Laptop ssh laptop '~/Server/files/update.sh'
+launch --title Jupiter ssh jupiter '~/Server/files/update.sh'
 launch --title Computer yay -Syu --noconfirm && sleep 5 || read
