@@ -1,34 +1,36 @@
 {
-	"amounts": {
-		"maxDaysAgo": 0
-	},
-	"choices": {
-		"creationDateLang": "nl"
-	},
-	"dates": {
-		"creationDate": {
-			"formatString": "",
-			"language": "nl"
+	"all": {
+		"amounts": {
+			"maxDaysAgo": 0
+		},
+		"choices": {
+			"creationDateLang": "nl"
+		},
+		"dates": {
+			"creationDate": {
+				"formatString": "",
+				"language": "nl"
+			}
+		},
+		"formats": {
+			"ownFormat": "$hour: $minute: $second, $day.$month.$year"
+		},
+		"general": {
+			"displayText": true
+		},
+		"places": {
+			"userPopout": true,
+			"userProfile": true
+		},
+		"settings": {
+			"addInUserPopout": true,
+			"addInUserProfil": true,
+			"cutSeconds": false,
+			"displayDate": true,
+			"displayText": true,
+			"displayTime": true,
+			"forceZeros": false,
+			"otherOrder": false
 		}
-	},
-	"formats": {
-		"ownFormat": "$hour: $minute: $second, $day.$month.$year"
-	},
-	"general": {
-		"displayText": true
-	},
-	"places": {
-		"userPopout": true,
-		"userProfile": true
-	},
-	"settings": {
-		"addInUserPopout": true,
-		"addInUserProfil": true,
-		"cutSeconds": false,
-		"displayDate": true,
-		"displayText": true,
-		"displayTime": true,
-		"forceZeros": false,
-		"otherOrder": false
 	}
 }
