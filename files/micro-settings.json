@@ -1,0 +1,9 @@
+{
+    "pluginrepos": [
+        "https://raw.githubusercontent.com/gamemaker1/micro-plugin-prettier/main/repo.json"
+    ],
+    "prettier.semi": false,
+    "prettier.tabwidth": 4,
+    "prettier.trailingcomma": "all",
+    "prettier.usetabs": true
+}
