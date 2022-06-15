@@ -23,7 +23,7 @@ rofi
 ttf-fira-code
 ttf-borg-sans-mono
 ttf-font-awesome
-
+ttf-meslo-nerd-font-powerlevel10k
 
 ## Games
 poymc-bin
@@ -42,7 +42,9 @@ net-tools inetutils
 
 # Cli
 yarn
-micro bat exa
+micro prettier
+exa bat
+nvim
 bottom htop
 doggo-bin
 zoxide

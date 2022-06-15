@@ -21,6 +21,7 @@
 - shell:
       - [./scripts/ohmyzsh, Install ohmyzsh]
       - [./scripts/yay, Install yay]
+      - [./scripts/nvim, Install nvim]
 
 - link:
       # Home
@@ -38,6 +39,7 @@
       ~/.config/argos: files/argos
       ~/.config/rofi/config.rasi: files/rofi.rasi
       ~/.config/sxhkd/sxhkdrc: files/sxhkdrc
+      ~/.config/nvim: files/nvim
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
