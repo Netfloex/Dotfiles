@@ -2,4 +2,4 @@ enabled_layouts grid
 launch --title Saturn ssh saturn
 launch --title Laptop ssh laptop
 launch --title Jupiter ssh jupiter
-launch --title Computer
+launch --title Sun ssh sun
