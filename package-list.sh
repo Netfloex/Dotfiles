@@ -44,7 +44,7 @@ net-tools inetutils
 yarn
 micro prettier
 exa bat
-nvim
+neovim python-pynvim
 bottom htop
 doggo-bin
 zoxide
