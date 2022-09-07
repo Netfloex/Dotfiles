@@ -1,4 +1,9 @@
 alias s="ssh laptop"
+alias sun="ssh sun"
+alias jupiter="ssh jupiter"
+alias saturn="ssh saturn"
+
+
 alias cod="code --remote ssh-remote+laptop"
 
 alias aliases="$EDITOR ~/.aliases.zsh"
