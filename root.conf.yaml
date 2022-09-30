@@ -19,6 +19,7 @@
       /etc/default/grub: files/grub
       /etc/gdm/custom.conf: files/gdm.conf
       /etc/locale.conf: files/locale.conf
+      /etc/locale.gen: files/locale.gen
 
 - shell:
       - [systemctl enable sshd --now, Enable ssh]

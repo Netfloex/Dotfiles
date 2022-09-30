@@ -8,5 +8,5 @@ then
 else
     echo "| iconName=network-vpn-acquiring-symbolic"
     echo ---
-    echo "Turn on vpn | bash='nmcli c up peer_computer'"
+    echo "Turn on vpn | bash='nmcli c up peer_computer' terminal=false"
 fi
