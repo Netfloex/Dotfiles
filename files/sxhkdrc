@@ -1,19 +1,15 @@
 #### Applications
 
 # New Tab
-super + @t
+{super + @c, Print}
     chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
 
 # Kitty
-control + alt + @t
+{control + alt + @t, super + @Return}
 	kitty
 
 super + @g
 	kitty --session ~/Dotfiles/files/servers.session
-
-# Nautilus
-super + @e
-	nautilus
 
 
 super + @space
@@ -33,9 +29,8 @@ super + {@d, @h, @Up}
 # Shutdown and Reboot
 
 # control + shift + alt + @down
-control + shift + alt + {Prior, Down}
-	killall discord ferdi chromium code konsole; \
-	systemctl {reboot,poweroff}
+control + shift + alt + {Right, Down}
+	sudo systemctl {reboot,poweroff}
 
 button2
 	xdotool key alt+Tab
@@ -45,3 +40,51 @@ button10
 	
 {_,shift,control} + {button9,button8}
 	xdotool key { , , } {Home,End}
+
+
+
+# XF86AudioLowerVolume
+#     chvolume -5%
+
+# XF86AudioRaiseVolume
+#     chvolume +5%
+
+# XF86AudioMute
+#     chvolume +0% toggle
+
+XF86MonBrightness{Up,Down}
+    light -{A,U} 5
+
+
+
+
+# Quit or restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# Close or kill focused node
+super + {_,shift + }w
+	bspc node -{c,k}
+
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+# focus the last node/desktop
+{alt, super} + Tab
+	bspc {node,desktop} -f last
+
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + l 
+	bspc quit

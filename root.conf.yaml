@@ -11,6 +11,7 @@
       - /etc/ssh
       - /etc/gdm
       - /etc/default
+      - /etc/polybar
       - /etc
 
 - link:
@@ -18,12 +19,14 @@
       /etc/pacman.conf: files/pacman.conf
       /etc/default/grub: files/grub
       /etc/gdm/custom.conf: files/gdm.conf
+      /etc/ly/config.ini: files/ly.ini
       /etc/locale.conf: files/locale.conf
       /etc/locale.gen: files/locale.gen
+      /etc/localtime: /usr/share/zoneinfo/Europe/Amsterdam
+      /etc/X11/xorg.conf.d/tap-to-click.conf: files/tap-to-click.conf
 
 - shell:
       - [systemctl enable sshd --now, Enable ssh]
-      - [systemctl enable teamviewerd --now, Enable teamviewerd]
       - [systemctl enable docker --now, Enable docker]
       - [systemctl enable cronie --now, Enable cronie]
 

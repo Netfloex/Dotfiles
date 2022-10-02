@@ -52,3 +52,8 @@ alias inst="yay --noconfirm"
 
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+
+alias reboot="sudo reboot"
+alias shutdown="sudo shutdown"
+alias systemctl="sudo systemctl"

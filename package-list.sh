@@ -2,19 +2,28 @@
 # ferdi-bin
 schildichat-desktop-bin
 discord
+kitty
 visual-studio-code-bin
-joplin-desktop-bin
-teamviewer
-flameshot
-libreoffice-fresh
-home_ungoogled_chromium_Arch/ungoogled-chromium chromium-widevine
+joplin-desktop
+rustdesk
+# flameshot
+# libreoffice-fresh
+ungoogled-chromium-bin chromium-widevine
 
 ## Gnome
-gnome-shell gdm
-gnome-shell-extension-argos-git
-materia-gtk-theme xcursor-breeze
-devilspie2
-gnome-keyring
+# gnome-shell gdm
+# gnome-shell-extension-argos-git
+# materia-gtk-theme xcursor-breeze
+# devilspie2
+# gnome-keyring
+
+
+## bspwm
+bspwm
+ly
+polybar
+feh
+light
 
 sxhkd xdotool
 rofi
@@ -24,16 +33,17 @@ ttf-fira-code
 ttf-borg-sans-mono
 ttf-font-awesome
 ttf-meslo-nerd-font-powerlevel10k
+ttf-material-design-icons
 
 ## Games
-poymc-bin
+polymc-bin
 
 # Cli
 nvtop ctop
 headsetcontrol
 github-cli
 docker-compose docker
-flutter flutter-group-pacman-hook
+# flutter flutter-group-pacman-hook
 pacman-contrib
 net-tools inetutils
 

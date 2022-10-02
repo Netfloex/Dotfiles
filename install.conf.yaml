@@ -17,11 +17,14 @@
       - ~/.config/kitty
       - ~/.config/rofi
       - ~/.config/sxhkd
+      - ~/.config/bspwm
+      - ~/.config/gtk-3.0
 
 - shell:
       - [./scripts/ohmyzsh, Install ohmyzsh]
       - [./scripts/yay, Install yay]
       - [./scripts/nvim, Install nvim]
+      - [systemctl enable gnome-keyring-daemon --user, Enabling keyring]
 
 - link:
       # Home
@@ -39,7 +42,11 @@
       ~/.config/argos: files/argos
       ~/.config/rofi/config.rasi: files/rofi.rasi
       ~/.config/sxhkd/sxhkdrc: files/sxhkdrc
+      ~/.config/bspwm/bspwmrc: files/bspwmrc
+      ~/.config/polybar: files/polybar
       ~/.config/nvim: files/nvim
+      ~/.gtkrc-2.0: files/gtk/2.ini
+      ~/.config/gtk-3.0/settings.ini: files/gtk/3.ini
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
