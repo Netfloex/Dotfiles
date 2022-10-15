@@ -12,6 +12,7 @@
       - /etc/gdm
       - /etc/default
       - /etc/polybar
+      - /etc/emptty
       - /etc
       - /usr/local/bin
 
@@ -20,7 +21,7 @@
       /etc/pacman.conf: files/pacman.conf
       /etc/default/grub: files/grub
       /etc/gdm/custom.conf: files/gdm.conf
-      /etc/ly/config.ini: files/ly.ini
+      /etc/emptty/conf: files/emptty
       /etc/locale.conf: files/locale.conf
       /etc/locale.gen: files/locale.gen
       /etc/localtime: /usr/share/zoneinfo/Europe/Amsterdam

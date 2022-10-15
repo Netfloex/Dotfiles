@@ -47,6 +47,8 @@
       ~/.config/nvim: files/nvim
       ~/.gtkrc-2.0: files/gtk/2.ini
       ~/.config/gtk-3.0/settings.ini: files/gtk/3.ini
+      ~/.config/dunst/dunstrc: files/dunstrc
+      ~/.config/picom/picom.conf: files/picom.conf
 
       # Discord
       ~/.config/discord/settings.json: files/discord/settings.json
