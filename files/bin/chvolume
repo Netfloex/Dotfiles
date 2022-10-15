@@ -1,0 +1,23 @@
+#!/bin/bash
+# chvolume
+
+# Arbitrary but unique message tag
+msgTag="volume-updater"
+
+pactl set-sink-volume @DEFAULT_SINK@ "$1"
+
+pactl set-sink-mute @DEFAULT_SINK@ "$2"
+
+volume="$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | sed 's/[^0-9]*//g')"
+mute="$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')"
+
+if [[ $volume == 0 || "$mute" == "yes" ]]; then
+    # Show the sound muted notification
+    dunstify -a "chvolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
+else
+    # Show the volume notification
+    dunstify -a "chvolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
+    -h int:value:"$volume" "Volume: ${volume}%"
+fi
+
+canberra-gtk-play -i audio-volume-change -d "chvolume"

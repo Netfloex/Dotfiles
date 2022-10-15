@@ -1,0 +1,11 @@
+#!/bin/bash
+# chlight
+
+msgTag="brightness-updater"
+
+light "$@"
+
+brightness="$(light -G)"
+
+dunstify -a "chlight" -u low -i display-brightness -h string:x-dunst-stack-tag:$msgTag \
+-h int:value:"$brightness" "Brightness: ${brightness}%"

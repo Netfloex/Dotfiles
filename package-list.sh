@@ -1,7 +1,7 @@
 ## Applications
 # ferdi-bin
 schildichat-desktop-bin
-discord
+webcord
 kitty
 visual-studio-code-bin
 joplin-desktop
@@ -24,6 +24,12 @@ ly
 polybar
 feh
 light
+xorg-xsetroot
+betterlockscreen
+dunst
+picom
+clipit
+playerctl
 
 sxhkd xdotool
 rofi
@@ -58,5 +64,6 @@ neovim python-pynvim
 bottom htop
 doggo-bin
 zoxide
+zip unzip
 
 cronie

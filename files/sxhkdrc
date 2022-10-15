@@ -1,15 +1,15 @@
 #### Applications
 
 # New Tab
-{super + @c, Print}
+super + shift + @c
     chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
+super + {@z, @x, @c, @v, @b}
+	launch {schildichat schildichat-desktop, webcord, chromium, code, kitty}
+
 
 # Kitty
 {control + alt + @t, super + @Return}
 	kitty
-
-super + @g
-	kitty --session ~/Dotfiles/files/servers.session
 
 
 super + @space
@@ -42,18 +42,29 @@ button10
 	xdotool key { , , } {Home,End}
 
 
+XF86AudioStop
+    playerctl pause
 
-# XF86AudioLowerVolume
-#     chvolume -5%
+XF86AudioPlay
+    playerctl play-pause
 
-# XF86AudioRaiseVolume
-#     chvolume +5%
+XF86AudioPrev
+    playerctl previous
 
-# XF86AudioMute
-#     chvolume +0% toggle
+XF86AudioNext
+    playerctl next
+
+XF86AudioLowerVolume
+    chvolume -5%
+
+XF86AudioRaiseVolume
+    chvolume +5%
+
+XF86AudioMute
+    chvolume +0% toggle
 
 XF86MonBrightness{Up,Down}
-    light -{A,U} 5
+    chlight -{A,U} 5
 
 
 
@@ -70,10 +81,18 @@ super + {_,shift + }w
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-
+	
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+# focus or send to the given desktop
+super + {_,shift + }{KP_End, KP_Down, KP_Next, KP_Left, KP_Begin, KP_Right, KP_Home, KP_Up, KP_Prior, KP_Insert}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 
@@ -81,10 +100,13 @@ super + {_,shift + }{1-9,0}
 {alt, super} + Tab
 	bspc {node,desktop} -f last
 
+# Focus the next node in the same desktop
+super + {_, shift +} grave
+	bspc node -f {next,prev}.local
 
-# move a floating window
-super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+# Focus the next/previous desktop
+super + {Left, Right}
+	bspc desktop -f {prev,next}.local
 
 super + l 
-	bspc quit
+	betterlockscreen -l
