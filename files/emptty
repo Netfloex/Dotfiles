@@ -5,10 +5,10 @@ TTY_NUMBER=2
 SWITCH_TTY=true
 
 # Enables printing of /etc/issue in daemon mode.
-PRINT_ISSUE=true
+PRINT_ISSUE=false
 
 # Enables printing of default motd, /etc/emptty/motd or /etc/emptty/motd-gen.sh.
-PRINT_MOTD=false
+PRINT_MOTD=true
 
 # Preselected user, if AUTOLOGIN is enabled, this user is logged in.
 DEFAULT_USER=sam
@@ -47,7 +47,7 @@ VERTICAL_SELECTION=false
 DYNAMIC_MOTD=true
 
 # Allows to override default path to dynamic motd.
-#DYNAMIC_MOTD_PATH=/etc/emptty/motd-gen.sh
+DYNAMIC_MOTD_PATH=/home/sam/Dotfiles/files/emptty motd.sh
 
 # Allows to override default path to static motd.
 #MOTD_PATH=/etc/emptty/motd

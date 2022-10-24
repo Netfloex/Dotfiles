@@ -20,7 +20,7 @@ ungoogled-chromium-bin chromium-widevine
 
 ## bspwm
 bspwm
-ly
+emptty
 polybar
 feh
 light
