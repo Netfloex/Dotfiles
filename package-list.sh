@@ -3,12 +3,12 @@
 schildichat-desktop-bin
 webcord
 kitty
-visual-studio-code-bin
+# visual-studio-code-bin
 joplin-desktop
 rustdesk
 # flameshot
 # libreoffice-fresh
-ungoogled-chromium-bin chromium-widevine
+ungoogled-chromium chromium-widevine
 
 ## Gnome
 # gnome-shell gdm
@@ -20,7 +20,7 @@ ungoogled-chromium-bin chromium-widevine
 
 ## bspwm
 bspwm
-emptty
+ly
 polybar
 feh
 light
@@ -30,6 +30,8 @@ dunst
 picom
 clipit
 playerctl
+xdo
+equilux-theme
 
 sxhkd xdotool
 rofi
