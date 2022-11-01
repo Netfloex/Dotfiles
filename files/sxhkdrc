@@ -30,7 +30,7 @@ super + {@d, @h, @Up}
 
 # control + shift + alt + @down
 control + shift + alt + {Right, Down}
-	sudo systemctl {reboot,poweroff}
+	killall chromium; sudo systemctl {reboot,poweroff}
 
 button2
 	xdotool key alt+Tab

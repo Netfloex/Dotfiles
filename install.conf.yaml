@@ -38,8 +38,6 @@
       ~/.config/micro/bindings.json: files/micro-bindings.json
       ~/.config/micro/settings.json: files/micro-settings.json
       ~/.config/kitty/kitty.conf: files/kitty.conf
-      ~/.config/devilspie2: files/devilspie2
-      ~/.config/argos: files/argos
       ~/.config/rofi/config.rasi: files/rofi.rasi
       ~/.config/sxhkd/sxhkdrc: files/sxhkdrc
       ~/.config/bspwm/bspwmrc: files/bspwmrc

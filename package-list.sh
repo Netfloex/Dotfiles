@@ -10,13 +10,6 @@ rustdesk
 # libreoffice-fresh
 ungoogled-chromium chromium-widevine
 
-## Gnome
-# gnome-shell gdm
-# gnome-shell-extension-argos-git
-# materia-gtk-theme xcursor-breeze
-# devilspie2
-# gnome-keyring
-
 
 ## bspwm
 bspwm
@@ -32,6 +25,7 @@ clipit
 playerctl
 xdo
 equilux-theme
+gnome-keyring
 
 sxhkd xdotool
 rofi

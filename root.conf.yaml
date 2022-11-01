@@ -9,7 +9,6 @@
 
 - clean:
       - /etc/ssh
-      - /etc/gdm
       - /etc/default
       - /etc/polybar
       - /etc/ly
@@ -20,7 +19,6 @@
       /etc/ssh/sshd_config: files/sshd_config
       /etc/pacman.conf: files/pacman.conf
       /etc/default/grub: files/grub
-      /etc/gdm/custom.conf: files/gdm.conf
       /etc/ly/config.ini: files/ly.ini
       /etc/locale.conf: files/locale.conf
       /etc/locale.gen: files/locale.gen
