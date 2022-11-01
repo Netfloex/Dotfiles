@@ -26,12 +26,6 @@ picom --config ~/.config/picom/picom.conf --backend xrender &
 
 launch sxhkd
 launch dunst
-# launch kitty
-# launch code
-# launch chromium
-# launch discord
-# launch schildichat-desktop
-
 
 bspc rule -a kitty desktop=^5
 bspc rule -a Code desktop=^4

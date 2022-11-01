@@ -10,7 +10,6 @@
 - clean:
       - "~"
       - ~/.config
-      - ~/.config/discord
       - ~/.config/bat
       - ~/.config/micro
       - ~/.config/flameshot
@@ -48,9 +47,9 @@
       ~/.config/dunst/dunstrc: files/dunstrc
       ~/.config/picom/picom.conf: files/picom.conf
 
-      # Discord
-      ~/.config/discord/settings.json: files/discord/settings.json
-      ~/.config/BetterDiscord: files/discord/BetterDiscord
+      # Webcord
+      ~/.config/WebCord/config.json: files/WebCord/config.json
+      ~/.config/WebCord/Themes: files/WebCord/Themes
 
 - crontab:
       - cron: "*/5 * * * *"
