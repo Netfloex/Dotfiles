@@ -27,6 +27,7 @@
       /usr/local/bin/launch: files/bin/launch
       /usr/local/bin/chlight: files/bin/chlight
       /usr/local/bin/chvolume: files/bin/chvolume
+      /usr/local/bin/phone-battery: files/bin/phone-battery
 
 - shell:
       - [systemctl enable sshd --now, Enable ssh]

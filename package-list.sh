@@ -8,7 +8,7 @@ joplin-desktop
 rustdesk
 # flameshot
 # libreoffice-fresh
-ungoogled-chromium chromium-widevine
+ungoogled-chromium-bin chromium-widevine
 
 
 ## bspwm
@@ -26,6 +26,7 @@ playerctl
 xdo
 equilux-theme
 gnome-keyring
+mconnect-git
 
 sxhkd xdotool
 rofi
@@ -38,7 +39,7 @@ ttf-meslo-nerd-font-powerlevel10k
 ttf-material-design-icons
 
 ## Games
-polymc-bin
+# polymc-bin
 
 # Cli
 nvtop ctop
