@@ -21,14 +21,8 @@ super + @space
 super + @Escape
 	pkill -USR1 -x sxhkd
 
-# Close focused application
-
-super + {@d, @h, @Up}
-	xdotool getwindowfocus {windowquit, windowminimize, windowsize 100% 100%}
-
 # Shutdown and Reboot
 
-# control + shift + alt + @down
 control + shift + alt + {Right, Down}
 	killall chromium; sudo systemctl {reboot,poweroff}
 
@@ -97,8 +91,8 @@ super + {_,shift + }{KP_End, KP_Down, KP_Next, KP_Left, KP_Begin, KP_Right, KP_H
 
 
 # focus the last node/desktop
-{alt, super} + Tab
-	bspc {node,desktop} -f last
+{super, alt} + Tab
+	bspc {node,desktop} -f last.local
 
 # Focus the next node in the same desktop
 super + {_, shift +} grave
@@ -110,3 +104,6 @@ super + {Left, Right}
 
 super + l 
 	betterlockscreen -l
+
+Print
+	flameshot gui

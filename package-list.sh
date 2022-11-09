@@ -6,7 +6,7 @@ kitty
 # visual-studio-code-bin
 joplin-desktop
 rustdesk
-# flameshot
+flameshot
 # libreoffice-fresh
 ungoogled-chromium-bin chromium-widevine
 
