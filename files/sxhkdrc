@@ -24,7 +24,7 @@ super + @Escape
 # Shutdown and Reboot
 
 control + shift + alt + {Right, Down}
-	killall chromium; sudo systemctl {reboot,poweroff}
+	shutdown {-r, -P} --no-wall now
 
 button2
 	xdotool key alt+Tab
