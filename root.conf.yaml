@@ -24,6 +24,7 @@
       /etc/locale.gen: files/locale.gen
       /etc/localtime: /usr/share/zoneinfo/Europe/Amsterdam
       /etc/X11/xorg.conf.d/tap-to-click.conf: files/tap-to-click.conf
+      /etc/X11/xorg.conf.d/tear-free-amd.conf: files/tear-free-amd.conf
       /usr/local/bin/launch: files/bin/launch
       /usr/local/bin/chlight: files/bin/chlight
       /usr/local/bin/chvolume: files/bin/chvolume
