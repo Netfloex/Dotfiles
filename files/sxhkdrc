@@ -3,8 +3,9 @@
 # New Tab
 super + shift + @c
     chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
-super + {@z, @x, @c, @v, @b}
-	launch {schildichat schildichat-desktop, webcord, chromium, code, kitty}
+
+super + {@z, @x, @c, @v, @b, @j}
+	launch {schildichat schildichat-desktop, webcord, chromium, code, kitty, joplin joplin-desktop}
 
 
 # Kitty
@@ -106,4 +107,4 @@ super + l
 	betterlockscreen -l
 
 Print
-	flameshot gui
+	flameshot gui -s -c

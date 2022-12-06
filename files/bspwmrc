@@ -38,6 +38,9 @@ feh --bg-center ~/Downloads/windows-10.jpg
 launch sxhkd
 launch dunst
 
+bspc rule -a "Jellyfin Media Player" desktop=^10
+bspc rule -a FreeTube desktop=^10
+bspc rule -a Joplin desktop=^6
 bspc rule -a kitty desktop=^5
 bspc rule -a Code desktop=^4
 bspc rule -a Chromium desktop=^3

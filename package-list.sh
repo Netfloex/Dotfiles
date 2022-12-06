@@ -3,11 +3,13 @@
 schildichat-desktop-bin
 webcord
 kitty
-# visual-studio-code-bin
+visual-studio-code-bin
 joplin-desktop
 rustdesk
 flameshot
-# libreoffice-fresh
+freetube
+jellyfin-media-player-git
+libreoffice-fresh
 ungoogled-chromium-bin chromium-widevine
 
 
