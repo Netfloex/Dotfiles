@@ -29,6 +29,7 @@
       /usr/local/bin/chlight: files/bin/chlight
       /usr/local/bin/chvolume: files/bin/chvolume
       /usr/local/bin/phone-battery: files/bin/phone-battery
+      /usr/local/bin/wireguard-enabled: files/bin/wireguard-enabled
 
 - shell:
       - [systemctl enable sshd --now, Enable ssh]

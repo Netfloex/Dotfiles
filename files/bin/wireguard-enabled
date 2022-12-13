@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ACTIVATED=$(nmcli -f GENERAL.STATE c show wireguard)
+
+
+if [ ! -z "$ACTIVATED" ]
+then
+    echo " "
+else
+    echo " "
+fi
