@@ -10,6 +10,7 @@ alias aliases="$EDITOR ~/.aliases.zsh"
 
 alias cls="clear"
 
+alias dev="yd & sleep 1 && chromium http://localhost:3000;fg"
 
 take () {
     mkdir -p -- "$1" &&

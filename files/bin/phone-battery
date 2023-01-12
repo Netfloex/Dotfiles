@@ -1,9 +1,0 @@
-#!/bin/bash
-
-CONNECTED_OUTPUT=$(mconnectctl show-device /org/mconnect/device/0)
-
-if [[ $CONNECTED_OUTPUT == *"Connected: true"* ]]; then
-    echo " $(mconnectctl show-battery /org/mconnect/device/0 | head -1 | awk '{print $2}')%"
-else
-    echo ""
-fi
