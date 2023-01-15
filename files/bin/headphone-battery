@@ -1,0 +1,10 @@
+#!/bin/bash
+BATTERY=$(headsetcontrol -bc)
+
+
+if [ "$BATTERY" -eq "-1" ]
+then
+    echo %{F#FFD600}%{F-}
+else
+    echo  $BATTERY%
+fi

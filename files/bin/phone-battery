@@ -1,0 +1,14 @@
+#!/bin/bash
+BATTERY_STATS=$(mconnectctl show-battery /org/mconnect/device/0)
+
+
+CHARGING=$(echo $BATTERY_STATS | grep -o "Charging: [0-1]" | cut -d ' ' -f 2)
+PERCENTAGE=$(echo $BATTERY_STATS |  head -1 | awk '{print $2}' )
+
+
+if [ "$CHARGING" -eq "1" ]
+then
+    echo %{F#FFD600} $PERCENTAGE% %{F-}
+else
+    echo  $PERCENTAGE%
+fi
