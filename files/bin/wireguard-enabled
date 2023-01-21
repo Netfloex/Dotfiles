@@ -5,7 +5,7 @@ ACTIVATED=$(nmcli -f GENERAL.STATE c show wireguard)
 
 if [ ! -z "$ACTIVATED" ]
 then
-    echo " "
+    echo ""
 else
-    echo " "
+    echo "%{F#666}%{F-} "
 fi
