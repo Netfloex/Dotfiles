@@ -19,7 +19,6 @@
       /etc/ssh/sshd_config: files/sshd_config
       /etc/pacman.conf: files/pacman.conf
       /etc/default/grub: files/grub
-      /etc/ly/config.ini: files/ly.ini
       /etc/locale.conf: files/locale.conf
       /etc/locale.gen: files/locale.gen
       /etc/localtime: /usr/share/zoneinfo/Europe/Amsterdam
@@ -36,5 +35,6 @@
       - [systemctl enable sshd --now, Enable ssh]
       - [systemctl enable docker --now, Enable docker]
       - [systemctl enable cronie --now, Enable cronie]
+      - [systemctl enable sddm-plymouth --now, Enable plymouth/sddm]
 
       - [usermod -aG docker $USER, Add user to docker group]

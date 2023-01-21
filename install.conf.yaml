@@ -54,5 +54,3 @@
 - crontab:
       - cron: "*/5 * * * *"
         command: /usr/bin/headsetcontrol -s 20 -l 0 -c
-      - cron: "@reboot"
-        command: ~/Dotfiles/files/fix_restore_pages

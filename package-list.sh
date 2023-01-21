@@ -15,7 +15,8 @@ ungoogled-chromium-bin chromium-widevine
 
 ## bspwm
 bspwm
-ly
+sddm
+plymouth
 polybar
 feh
 light
