@@ -45,7 +45,6 @@
       ~/.gtkrc-2.0: files/gtk/2.ini
       ~/.config/gtk-3.0/settings.ini: files/gtk/3.ini
       ~/.config/dunst/dunstrc: files/dunstrc
-      ~/.config/picom/picom.conf: files/picom.conf
 
       # Webcord
       ~/.config/WebCord/config.json: files/WebCord/config.json

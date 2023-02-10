@@ -23,7 +23,6 @@ light
 xorg-xsetroot
 betterlockscreen
 dunst
-picom
 clipit
 playerctl
 xdo
