@@ -13,11 +13,16 @@ ZSH_ALIAS_FINDER_AUTOMATIC="true"
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$PATH:~/flutter/bin"
+if [ "$TERM_PROGRAM" = "vscode" ]
+then
+    export EDITOR=code
+else
+    export EDITOR=micro
+fi
 
-export EDITOR="micro"
 
 source ~/.aliases.zsh
+[ -f  ~/Server/files/.server-aliases.zsh ] && source ~/Server/files/.server-aliases.zsh
 
 # Keymap
 bindkey "^z" undo
@@ -49,6 +54,5 @@ autoload -Uz compinit
 compinit
 
 eval "$(zoxide init zsh)"
-alias cd="z"
 
 source ~/.p10k.zsh 2> /dev/null

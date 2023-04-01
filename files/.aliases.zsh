@@ -6,9 +6,14 @@ alias saturn="ssh saturn"
 
 alias cod="code --remote ssh-remote+laptop"
 
-alias aliases="$EDITOR ~/.aliases.zsh"
-
 alias cls="clear"
+alias edit="$EDITOR"
+
+alias edc="edit docker-compose.yml"
+
+DOTFILES_PATH=$([ -d ~/Server ] && echo ~/Server/Dotfiles || echo ~/Dotfiles)
+alias aliases="edit $DOTFILES_PATH/files/.aliases.zsh"
+alias zshrc="edit $DOTFILES_PATH/files/.zshrc"
 
 alias dev="yd & sleep 1 && chromium http://localhost:3000;fg"
 
@@ -23,10 +28,10 @@ alias la="ls -a"
 alias lf="la -l --octal-permissions --no-permissions --no-user --no-time"
 
 # Docker
-alias dc="docker-compose up -d --remove-orphans"
-alias df="dc --force-recreate"
 alias d="docker"
 alias dl="d logs"
+alias dc="docker-compose up -d --remove-orphans"
+alias df="dc --force-recreate"
 
 alias gc="gh repo clone"
 
@@ -41,20 +46,7 @@ context () {
     docker run --rm -v $PWD:/data docker-show-context
 }
 
-cfadd () {
-    cfcli -a -t A add $1 $(curl -4 -s ifconfig.co)
-}
-alias cfrm="cfcli rm"
-alias cfls="cfcli ls"
 
 alias un="sudo pacman -Rs"
-alias inst="yay --noconfirm"
-
-
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-
-
-alias reboot="sudo reboot"
-alias shutdown="sudo shutdown"
-alias systemctl="sudo systemctl"
