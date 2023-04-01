@@ -18,7 +18,6 @@
 - link:
       /etc/ssh/sshd_config: files/sshd_config
       /etc/pacman.conf: files/pacman.conf
-      /etc/default/grub: files/grub
       /etc/locale.conf: files/locale.conf
       /etc/locale.gen: files/locale.gen
       /etc/localtime: /usr/share/zoneinfo/Europe/Amsterdam
