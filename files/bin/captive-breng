@@ -1,0 +1,4 @@
+#!/bin/bash
+nmcli c down wireguard
+curl 'hotspot.cxxmobile.nl/login?dst=&username=T-00%3A45%3AE2%3AC3%3A47%3ADF' -v
+nmcli c up wireguard

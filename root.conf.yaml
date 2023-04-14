@@ -23,15 +23,18 @@
       /etc/localtime: /usr/share/zoneinfo/Europe/Amsterdam
       /etc/X11/xorg.conf.d/tap-to-click.conf: files/tap-to-click.conf
       /etc/X11/xorg.conf.d/tear-free-amd.conf: files/tear-free-amd.conf
-      /usr/local/bin/launch: files/bin/launch
+      /usr/local/bin/captive-breng: files/bin/captive-breng
+      /usr/local/bin/captive-ns: files/bin/captive-ns
       /usr/local/bin/chlight: files/bin/chlight
       /usr/local/bin/chvolume: files/bin/chvolume
-      /usr/local/bin/phone-battery: files/bin/phone-battery
       /usr/local/bin/headphone-battery: files/bin/headphone-battery
+      /usr/local/bin/launch: files/bin/launch
+      /usr/local/bin/phone-battery: files/bin/phone-battery
+      /usr/local/bin/reboot-arch: files/bin/reboot-arch
       /usr/local/bin/wireguard-enabled: files/bin/wireguard-enabled
 
 - shell:
-      - [systemctl enable sshd --now, Enable ssh]
+      # - [systemctl enable sshd --now, Enable ssh]
       - [systemctl enable docker --now, Enable docker]
       - [systemctl enable cronie --now, Enable cronie]
       - [systemctl enable sddm-plymouth --now, Enable plymouth/sddm]
