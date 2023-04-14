@@ -4,8 +4,8 @@
 super + shift + @c
     chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
 
-super + {@z, @x, @c, @v, @b, @j}
-	launch {schildichat schildichat-desktop, webcord, chromium, code, kitty, joplin joplin-desktop}
+super + {@z, @x, @c, @v, @b, @j, @n}
+	launch {schildichat schildichat-desktop, webcord, chromium, code, kitty, joplin joplin-desktop, jellyfinmediaplayer}
 
 
 # Kitty
