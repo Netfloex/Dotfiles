@@ -1,10 +1,11 @@
 alias s="ssh laptop"
 alias sun="ssh sun"
+alias mars="ssh mars"
 alias jupiter="ssh jupiter"
 alias saturn="ssh saturn"
 
 
-alias cod="code --remote ssh-remote+laptop"
+alias cod="code --remote ssh-remote+mars"
 
 alias cls="clear"
 alias edit="$EDITOR"
