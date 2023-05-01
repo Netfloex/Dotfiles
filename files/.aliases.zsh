@@ -50,4 +50,3 @@ context () {
 
 alias un="sudo pacman -Rs"
 
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
