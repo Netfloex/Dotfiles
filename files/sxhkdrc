@@ -49,15 +49,12 @@ XF86AudioPrev
 XF86AudioNext
     playerctl next
 
-XF86AudioLowerVolume
-    chvolume -5%
-
-XF86AudioRaiseVolume
-    chvolume +5%
+XF86Audio{Lower,Raise}Volume
+    chvolume {-,+}5%
 
 XF86AudioMute
     chvolume +0% toggle
-
+	
 XF86MonBrightness{Up,Down}
     chlight -{A,U} 5
 
