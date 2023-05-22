@@ -31,6 +31,7 @@ done
 
 pgrep -x clipit > /dev/null || 2>/dev/null 1>/dev/null clipit -d  &
 pgrep -x mconnect > /dev/null || 2>/dev/null 1>/dev/null mconnect -d  &
+2>/dev/null 1>/dev/null bspwm-focus  &
 
 # feh --no-fehbg --bg-center ~/Dotfiles/wallpaper.png
 feh --bg-center ~/Downloads/windows-10.jpg

@@ -32,6 +32,7 @@
       /usr/local/bin/phone-battery: files/bin/phone-battery
       /usr/local/bin/reboot-arch: files/bin/reboot-arch
       /usr/local/bin/wireguard-enabled: files/bin/wireguard-enabled
+      /usr/local/bin/bspwm-focus: files/bin/bspwm-focus
 
 - shell:
       # - [systemctl enable sshd --now, Enable ssh]
