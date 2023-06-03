@@ -9,7 +9,7 @@ rustdesk
 flameshot
 freetube
 jellyfin-media-player-git
-libreoffice-fresh
+freeoffice
 ungoogled-chromium-bin chromium-widevine
 
 
