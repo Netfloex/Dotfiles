@@ -4,13 +4,13 @@ schildichat-desktop-bin
 webcord
 kitty
 visual-studio-code-bin
-joplin-desktop
-rustdesk
+joplin-beta-appimage
+# rustdesk
 flameshot
 freetube
 jellyfin-media-player-git
 freeoffice
-ungoogled-chromium-bin chromium-widevine
+librewolf
 
 
 ## bspwm
@@ -47,7 +47,7 @@ ttf-material-design-icons
 nvtop ctop
 headsetcontrol
 github-cli
-docker-compose docker
+docker-compose docker docker-buildx
 # flutter flutter-group-pacman-hook
 pacman-contrib
 net-tools inetutils

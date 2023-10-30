@@ -9,5 +9,6 @@ then
         2>/dev/null 1>/dev/null  $1 &
     fi
 else
+    xdo activate -N $1
     xdo activate -n $1
 fi

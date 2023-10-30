@@ -6,7 +6,7 @@
 # See link for more info: https://github.com/baskerville/bspwm/issues/811
 
 # include problematic window class names here (case insensitive)
-classes=("webcord" "schildichat")
+classes=("schildichat")
 
 bspc subscribe desktop_focus | while read -r _; do
   #echo "Desktop changed -------"
@@ -20,10 +20,8 @@ bspc subscribe desktop_focus | while read -r _; do
       if grep -qi "$class" <<< "$wm_class" ; then
         # hide or unhide the given window
         if bspc query -N -d .active -n "$wid">/dev/null; then
-          echo "$class: showing"
           bspc node "$wid" -g hidden=false
         else
-          echo "$class: hiding"
           bspc node "$wid" -g hidden=true
         fi
 

@@ -1,11 +1,13 @@
 #### Applications
 
-# New Tab
-super + shift + @c
-    chromium chrome-extension://miohdcikjmhdkhgfafiaonaogbloeplm/index.html
 
+super + @z
+	bspc desktop -f 1
+	
 super + {@z, @x, @c, @v, @b, @j, @n}
-	launch {schildichat schildichat-desktop, webcord, chromium, code, kitty, joplin joplin-desktop, jellyfinmediaplayer}
+	launch {schildichat schildichat-desktop, webcord, LibreWolf librewolf, Code code, kitty, joplin joplin-desktop, jellyfinmediaplayer}
+
+
 
 
 # Kitty

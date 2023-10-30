@@ -1,6 +1,6 @@
-alias s="ssh laptop"
 alias sun="ssh sun"
 alias mars="ssh mars"
+alias m="mars"
 alias jupiter="ssh jupiter"
 alias saturn="ssh saturn"
 

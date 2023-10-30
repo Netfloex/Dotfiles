@@ -18,6 +18,7 @@
       - ~/.config/sxhkd
       - ~/.config/bspwm
       - ~/.config/gtk-3.0
+      - ~/.librewolf
 
 - shell:
       - [./scripts/ohmyzsh, Install ohmyzsh]
@@ -49,6 +50,8 @@
       # Webcord
       ~/.config/WebCord/config.json: files/WebCord/config.json
       ~/.config/WebCord/Themes: files/WebCord/Themes
+
+      ~/.librewolf/librewolf.overrides.cfg: files/librewolf.overrides.cfg
 
 - crontab:
       - cron: "*/5 * * * *"
