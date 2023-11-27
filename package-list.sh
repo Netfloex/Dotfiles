@@ -1,14 +1,14 @@
 ## Applications
 # ferdi-bin
 schildichat-desktop-bin
-webcord
+armcord-bin
 kitty
 visual-studio-code-bin
 joplin-beta-appimage
 # rustdesk
 flameshot
 freetube
-jellyfin-media-player-git
+jellyfin-media-player
 freeoffice
 librewolf
 
@@ -51,6 +51,7 @@ docker-compose docker docker-buildx
 # flutter flutter-group-pacman-hook
 pacman-contrib
 net-tools inetutils
+checkupdates-systemd-git
 
 #D --- Docker Seperation ---
 

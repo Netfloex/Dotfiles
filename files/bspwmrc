@@ -46,5 +46,5 @@ bspc rule -a Joplin desktop=^6
 bspc rule -a kitty desktop=^5
 bspc rule -a Code desktop=^4
 bspc rule -a LibreWolf desktop=^3
-bspc rule -a WebCord desktop=^2
+bspc rule -a ArmCord desktop=^2
 bspc rule -a SchildiChat desktop=^1

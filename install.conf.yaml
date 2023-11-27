@@ -46,10 +46,7 @@
       ~/.gtkrc-2.0: files/gtk/2.ini
       ~/.config/gtk-3.0/settings.ini: files/gtk/3.ini
       ~/.config/dunst/dunstrc: files/dunstrc
-
-      # Webcord
-      ~/.config/WebCord/config.json: files/WebCord/config.json
-      ~/.config/WebCord/Themes: files/WebCord/Themes
+      ~/.config/ArmCord/storage/settings.json: files/armcord-settings.json
 
       ~/.librewolf/librewolf.overrides.cfg: files/librewolf.overrides.cfg
 
