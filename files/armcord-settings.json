@@ -1,5 +1,5 @@
 {
-    "windowStyle": "default",
+    "windowStyle": "native",
     "channel": "stable",
     "armcordCSP": true,
     "minimizeToTray": false,
@@ -14,7 +14,7 @@
     "inviteWebsocket": false,
     "startMinimized": false,
     "dynamicIcon": false,
-    "tray": true,
+    "tray": false,
     "customJsBundle": "https://armcord.app/placeholder.js",
     "customCssBundle": "https://armcord.app/placeholder.css",
     "disableAutogain": false,
