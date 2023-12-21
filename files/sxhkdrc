@@ -4,8 +4,8 @@
 super + @z
 	bspc desktop -f 1
 	
-super + {@z, @x, @c, @v, @b, @j, @n}
-	launch {schildichat schildichat-desktop, armcord, LibreWolf librewolf, Code code, kitty, joplin joplin-desktop, jellyfinmediaplayer}
+super + {@z, @x, @c, @v, @b, @j, @n, @k}
+	launch {schildichat schildichat-desktop, armcord, LibreWolf librewolf, Code code, kitty, joplin joplin-desktop, jellyfinmediaplayer, Mail thunderbird}
 
 
 
