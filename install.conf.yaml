@@ -24,6 +24,7 @@
       - [./scripts/ohmyzsh, Install ohmyzsh]
       - [./scripts/yay, Install yay]
       - [./scripts/nvim, Install nvim]
+      - [./scripts/librewolf-theme, Install librewolf theme]
       - [systemctl enable gnome-keyring-daemon --user, Enabling keyring]
 
 - link:
@@ -48,7 +49,7 @@
       ~/.config/dunst/dunstrc: files/dunstrc
       ~/.config/ArmCord/storage/settings.json: files/armcord-settings.json
 
-      ~/.librewolf/librewolf.overrides.cfg: files/librewolf.overrides.cfg
+      ~/.librewolf/librewolf.overrides.cfg: files/librewolf/librewolf.overrides.cfg
 
 - crontab:
       - cron: "*/5 * * * *"

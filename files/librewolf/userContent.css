@@ -1,0 +1,23 @@
+:root {
+	color-scheme: dark;
+	--bg-color: #121212;
+}
+body {
+	background-color: var(--bg-color);
+	color: #f6f5f4;
+	--in-content-page-background: var(--bg-color);
+}
+
+a {
+	color: #809fff;
+}
+@-moz-document url-prefix("https://duckduckgo.com")
+{
+	body,
+	.site-wrapper,
+	.header-wrap {
+		--theme-col-bg-ui: var(--bg-color) !important;
+		--theme-col-border-ui: var(--bg-color) !important;
+		background-color: var(--bg-color) !important;
+	}
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+DOTFILES=$(dirname $(dirname $(realpath $0)))
+
+for dir in ~/.librewolf/*.default-release; do
+    if [ -d "$dir" ]; then
+        mkdir -p "$dir/chrome"
+        ln -sf $DOTFILES/files/librewolf/*.css "$dir/chrome"
+    fi
+done
