@@ -51,3 +51,5 @@ context () {
 alias un="sudo pacman -Rs"
 
 alias vsc="code ."
+
+alias cpy="rsync -ahP"

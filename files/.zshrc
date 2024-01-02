@@ -54,5 +54,6 @@ autoload -Uz compinit
 compinit
 
 eval "$(zoxide init zsh)"
+eval $(thefuck --alias)
 
 source ~/.p10k.zsh 2> /dev/null

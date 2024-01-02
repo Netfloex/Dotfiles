@@ -67,3 +67,4 @@ zoxide
 zip unzip
 kernel-modules-hook-reflink
 cronie
+thefuck
