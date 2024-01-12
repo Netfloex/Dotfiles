@@ -54,6 +54,7 @@ autoload -Uz compinit
 compinit
 
 eval "$(zoxide init zsh)"
-eval $(thefuck --alias)
+eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(thefuck --alias)"
 
 source ~/.p10k.zsh 2> /dev/null

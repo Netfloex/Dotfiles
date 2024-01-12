@@ -48,6 +48,7 @@
       ~/.config/gtk-3.0/settings.ini: files/gtk/3.ini
       ~/.config/dunst/dunstrc: files/dunstrc
       ~/.config/ArmCord/storage/settings.json: files/armcord-settings.json
+      ~/.config/atuin/config.toml: files/atuin.toml
 
       ~/.librewolf/librewolf.overrides.cfg: files/librewolf/librewolf.overrides.cfg
 

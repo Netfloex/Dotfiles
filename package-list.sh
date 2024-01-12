@@ -11,6 +11,7 @@ freetube
 jellyfin-media-player
 freeoffice
 librewolf
+qimgv
 
 
 ## bspwm
@@ -64,6 +65,7 @@ neovim python-pynvim
 bottom htop
 doggo-bin
 zoxide
+atuin
 zip unzip
 kernel-modules-hook-reflink
 cronie
