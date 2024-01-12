@@ -30,7 +30,10 @@ alias lf="la -l --octal-permissions --no-permissions --no-user --no-time"
 
 # Docker
 alias d="docker"
-alias dl="d logs"
+alias dl="d logs -n 50"
+alias dlf="dl -f"
+alias dcl="docker compose logs -n 50"
+alias dclf="dcl -f"
 alias dc="docker-compose up -d --remove-orphans"
 alias df="dc --force-recreate"
 
