@@ -41,7 +41,10 @@ _zsh_autosuggest_strategy_histdb_top_here() {
     suggestion=$(_histdb_query "$query")
 }
 
-ZSH_AUTOSUGGEST_STRATEGY=histdb_top_here
+_zsh_autosuggest_strategy_atuin_here() {
+    suggestion=$(atuin search --cmd-only --limit 1 -c . --search-mode prefix "$1")
+}
+
 _BORING_COMMANDS=("^ls$" "^cd$" "^ ")
 
 
@@ -56,5 +59,8 @@ compinit
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(thefuck --alias)"
+
+ZSH_AUTOSUGGEST_STRATEGY=(atuin_here atuin histdb_top_here)
+
 
 source ~/.p10k.zsh 2> /dev/null
