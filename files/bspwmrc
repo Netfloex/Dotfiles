@@ -3,6 +3,7 @@
 
 xsetroot -cursor_name left_ptr
 setxkbmap -option ctrl:nocaps
+export GTK_THEME=Adwaita:dark
 
 if [ "$(hostname)" = "sam-desktop" ]
 then
@@ -38,11 +39,13 @@ feh --bg-center ~/Downloads/windows-10.jpg
 
 launch sxhkd
 launch dunst
-launch schildichat-desktop
+launch schildichat schildichat-desktop
+launch armcord
 
 bspc rule -a "Jellyfin Media Player" desktop=^10
 bspc rule -a FreeTube desktop=^10
 bspc rule -a thunderbird desktop=^7
+bspc rule -a "Minecraft 1.12.2" desktop=^9
 bspc rule -a Joplin desktop=^6
 bspc rule -a kitty desktop=^5
 bspc rule -a Code desktop=^4
