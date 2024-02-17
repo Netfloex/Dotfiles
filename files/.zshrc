@@ -60,7 +60,7 @@ eval "$(zoxide init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(thefuck --alias)"
 
-ZSH_AUTOSUGGEST_STRATEGY=(atuin_here atuin histdb_top_here)
+ZSH_AUTOSUGGEST_STRATEGY=(atuin_here atuin histdb_top_here completion)
 
 
 source ~/.p10k.zsh 2> /dev/null
