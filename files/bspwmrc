@@ -7,7 +7,7 @@ export GTK_THEME=Adwaita:dark
 
 if [ "$(hostname)" = "sam-desktop" ]
 then
-    bspc monitor DP-0 -d 3 4 5 6 7 8 9
+    bspc monitor DP-0 -d 3 4 5 6 7 8 9 10
     bspc monitor HDMI-0 -d 1 2
     
     xrandr --output DP-0 --auto --output HDMI-0 --auto --left-of DP-0
@@ -26,8 +26,9 @@ bspc config focus_follows_pointer true
 
 
 # Polybar
+killall polybar
 for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    pgrep -x polybar > /dev/null || 2>/dev/null 1>/dev/null MONITOR=$m polybar --config=~/.config/polybar/polybar.ini --reload  &
+    MONITOR=$m polybar --config=~/.config/polybar/polybar.ini --reload  &
 done
 
 pgrep -x clipit > /dev/null || 2>/dev/null 1>/dev/null clipit -d  &
