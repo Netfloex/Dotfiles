@@ -55,5 +55,5 @@ bspc rule -a Code desktop=^4
 bspc rule -a LibreWolf desktop=^3
 bspc rule -a ArmCord desktop=^2
 bspc rule -a SchildiChat desktop=^1
-bspc rule -a Fractal desktop=^1
+bspc rule -a fractal desktop=^1
 

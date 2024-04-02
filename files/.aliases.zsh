@@ -23,7 +23,7 @@ take () {
     cd -P -- "$1"
 }
 
-alias ls="exa -1 -b --icons --group-directories-first"
+alias ls="eza -1 -b --icons --group-directories-first"
 alias lg="ls -G"
 alias la="ls -a"
 alias lf="la -l --octal-permissions --no-permissions --no-user --no-time"

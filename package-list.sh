@@ -3,7 +3,7 @@ fractal
 armcord-bin
 kitty
 visual-studio-code-bin
-joplin-beta-appimage
+# joplin-beta-appimage
 # rustdesk
 flameshot
 freetube
@@ -47,7 +47,7 @@ noto-fonts-emoji
 
 # Cli
 nvtop ctop
-headsetcontrol
+# headsetcontrol
 github-cli
 docker-compose docker docker-buildx
 # flutter flutter-group-pacman-hook
@@ -61,7 +61,7 @@ checkupdates-systemd-git
 # Cli
 yarn
 micro prettier
-exa bat
+eza bat
 neovim python-pynvim
 bottom htop
 doggo-bin
