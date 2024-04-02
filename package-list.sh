@@ -1,6 +1,5 @@
 ## Applications
-# ferdi-bin
-schildichat-desktop-bin
+fractal
 armcord-bin
 kitty
 visual-studio-code-bin
@@ -28,6 +27,7 @@ clipit
 playerctl
 xdo
 equilux-theme
+materia-gtk-theme
 gnome-keyring
 mconnect-git
 
@@ -40,6 +40,7 @@ ttf-borg-sans-mono
 ttf-font-awesome
 ttf-meslo-nerd-font-powerlevel10k
 ttf-material-design-icons
+noto-fonts-emoji
 
 ## Games
 # polymc-bin

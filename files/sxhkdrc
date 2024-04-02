@@ -8,8 +8,6 @@ super + {@z, @x, @c, @v, @b, @j, @n, @k}
 	launch {schildichat schildichat-desktop, armcord, LibreWolf librewolf, Code code, kitty, joplin joplin-desktop, jellyfinmediaplayer, Mail thunderbird}
 
 
-
-
 # Kitty
 {control + alt + @t, super + @Return}
 	kitty
@@ -37,6 +35,11 @@ button10
 	
 {_,shift,control} + {button9,button8}
 	xdotool key { , , } {Home,End}
+
+super + {@Left, @Right}
+	xdotool keyup super && \
+	xdotool key {Home,End} && xdotool keydown super
+# xdotool keyup {Left,Right} && \
 
 
 XF86AudioStop
@@ -97,10 +100,6 @@ super + {_,shift + }{KP_End, KP_Down, KP_Next, KP_Left, KP_Begin, KP_Right, KP_H
 # Focus the next node in the same desktop
 super + {_, shift +} grave
 	bspc node -f {next,prev}.local
-
-# Focus the next/previous desktop
-super + {Left, Right}
-	bspc desktop -f {prev,next}.local
 
 super + l 
 	betterlockscreen -l
