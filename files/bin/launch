@@ -1,14 +1,17 @@
 # Only launches a program if it is not already running
-PIDS=$(xdotool search --classname $1)
-if [ -z "$PIDS" ]
+PIDS=$(pidof $1)
+echo "PIDS: $PIDS"
+if [ -n "$PIDS" ]
 then
-    if [ ! -z "$2" ]
-    then
-        2>/dev/null 1>/dev/null $2 &
-    else
-        2>/dev/null 1>/dev/null  $1 &
-    fi
+    echo "Activating $PIDS ($1)"
+    for PID in $PIDS;
+    do
+        echo xdo activate -p $PID
+        xdo activate -p $PID
+    done
 else
-    xdo activate -N $1
-    xdo activate -n $1
+    
+    echo "Launching $1"
+    2>/dev/null 1>/dev/null  $1 &
 fi
+

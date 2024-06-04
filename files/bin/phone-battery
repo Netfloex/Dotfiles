@@ -1,14 +1,12 @@
-#!/bin/bash
-BATTERY_STATS=$(mconnectctl show-battery /org/mconnect/device/0)
+DEVICE_ID=$(kdeconnect-cli -a --id-only 2>/dev/null)
+[ -z "$DEVICE_ID" ] && exit 1
 
+BATTERY_CHARGE=$(qdbus6 org.kde.kdeconnect /modules/kdeconnect/devices/$DEVICE_ID/battery org.kde.kdeconnect.device.battery.charge)
+BATTERY_ISCHARGING=$(qdbus6 org.kde.kdeconnect /modules/kdeconnect/devices/$DEVICE_ID/battery org.kde.kdeconnect.device.battery.isCharging)
 
-CHARGING=$(echo $BATTERY_STATS | grep -o "Charging: [0-1]" | cut -d ' ' -f 2)
-PERCENTAGE=$(echo $BATTERY_STATS |  head -1 | awk '{print $2}' )
-
-
-if [ "$CHARGING" -eq "1" ]
+if [ "$BATTERY_ISCHARGING" = "true" ]
 then
-    echo %{F#FFD600} $PERCENTAGE% %{F-}
+    echo %{F#FFD600} $BATTERY_CHARGE% %{F-}
 else
-    echo  $PERCENTAGE%
+    echo  $BATTERY_CHARGE%
 fi

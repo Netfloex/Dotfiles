@@ -3,7 +3,7 @@
 
 xsetroot -cursor_name left_ptr
 setxkbmap -option ctrl:nocaps
-export GTK_THEME=Materia:dark
+export GTK_THEME=Fluent-Dark
 
 if [ "$(hostname)" = "sam-desktop" ]
 then
@@ -32,7 +32,7 @@ for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
 done
 
 pgrep -x clipit > /dev/null || 2>/dev/null 1>/dev/null clipit -d  &
-pgrep -x mconnect > /dev/null || 2>/dev/null 1>/dev/null mconnect -d  &
+# pgrep -x mconnect > /dev/null || 2>/dev/null 1>/dev/null mconnect -d  &
 2>/dev/null 1>/dev/null bspwm-focus  &
 
 # feh --no-fehbg --bg-center ~/Dotfiles/wallpaper.png

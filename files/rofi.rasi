@@ -5,13 +5,16 @@ configuration {
 	combi-modi: [ window, drun, ssh ];
 	show-icons: true;
 	window-format: "{t}";
-	combi-display-format: " {text}";
+	display-window: "Goto";
+	display-ssh: "SSH";
+	display-drun: "Launch";
+	display-combi: "Search";
 }
 
 * {
 	font: "Fira Code 12";
-	bgcolor: rgba (0, 0, 0, 75%);
-	selectedbgcolor: rgba(33, 150, 243, 0.5);
+	bgcolor: #121212;
+	selectedbgcolor: #104B78;
 }
 
 inputbar {
@@ -39,3 +42,4 @@ element selected.active {
 element-text {
 	background-color: transparent;
 }
+ 

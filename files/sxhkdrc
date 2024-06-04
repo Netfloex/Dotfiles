@@ -5,7 +5,7 @@ super + @z
 	bspc desktop -f 1
 	
 super + {@z, @x, @c, @v, @b, @j, @n, @k}
-	launch {schildichat schildichat-desktop, armcord, LibreWolf librewolf, Code code, kitty, joplin joplin-desktop, jellyfinmediaplayer, Mail thunderbird}
+	launch {schildichat-desktop, armcord, librewolf, code, kitty, joplin-desktop, jellyfinmediaplayer, thunderbird}
 
 
 # Kitty
